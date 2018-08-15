@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/tbook-common/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-order-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-publish-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-publish-service/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-sso-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-manager-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-manager-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
