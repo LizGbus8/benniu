@@ -31,11 +31,11 @@ import java.util.List;
  * 描述：
  */
 @Component
-@Service(version = "1.0.0")
+@Service
 @Slf4j
 public class OrderServiceImpl implements OrderService {
 
-    @Reference(version = "1.0.0")
+    @Reference
     private ContentService contentService;
 
     @Autowired

@@ -61,10 +61,10 @@ public class OrderServiceImplTest {
 
     @Test
     public void findBuyList1() {
-        Page<OrdersDTO> buyPage = orderService.findBuyList("3366", new PageRequest(0, 1));
-        buyPage.getContent().forEach(ordersDTO -> {
-            System.out.println(ordersDTO);
-        });
+//        Page<OrdersDTO> buyPage = orderService.findBuyList("3366", new PageRequest(0, 1));
+//        buyPage.getContent().forEach(ordersDTO -> {
+//            System.out.println(ordersDTO);
+//        });
     }
 
     @Test

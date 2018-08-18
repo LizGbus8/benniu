@@ -2,14 +2,16 @@ server:
   port: 8081
 
 spring:
+  aop:
+    proxy-target-class: true
   dubbo:
     application:
       name: orderService
     registry:
       address: zookeeper://120.79.254.32:2181
     protocol:
-          name: dubbo
-          port: 20881
+      name: dubbo
+      port: 20881
     scan: com.lzg.tbook.order.service
 
   datasource:

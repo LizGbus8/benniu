@@ -7,6 +7,8 @@ import com.lzg.common.exception.TBookException;
 import com.lzg.common.utlis.KeyUtil;
 import com.lzg.manager.dao.ContentDao;
 import com.lzg.manager.entity.Content;
+import com.lzg.manager.redis.RedisLock;
+import com.lzg.manager.redis.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -17,7 +19,7 @@ import org.springframework.stereotype.Component;
  * 描述：
  */
 @Slf4j
-@Service(version = "1.0.0")
+@Service
 @Component
 public class ContentServiceImpl implements ContentService {
 
@@ -26,6 +28,9 @@ public class ContentServiceImpl implements ContentService {
 
     @Autowired
     private RedisUtil redisUtil;
+
+    @Autowired
+    private RedisLock redisLock;
 
     private static final String CONTENT = "content";
 
@@ -122,6 +127,11 @@ public class ContentServiceImpl implements ContentService {
     //TODO 分布式锁
     @Override
     public void decreaseStock(String contentId) {
+
+        /** 加锁同步 */
+        redisLock.tryGetDistributedLock(contentId);
+
+
         /** 查找内容 */
         Content content = findContentById(contentId);
 

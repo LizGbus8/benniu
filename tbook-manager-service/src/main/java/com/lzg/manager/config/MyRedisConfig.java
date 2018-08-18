@@ -8,7 +8,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import redis.clients.jedis.HostAndPort;
+import redis.clients.jedis.JedisCluster;
 
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**
@@ -37,4 +41,17 @@ public class MyRedisConfig {
         return redisTemplate;
     }
 
+
+    @Bean
+    public JedisCluster jedisCluster(){
+        Set<HostAndPort> hostAndPortSet = new HashSet<>();
+        hostAndPortSet.add(new HostAndPort("120.79.254.32",7001));
+        hostAndPortSet.add(new HostAndPort("120.79.254.32",7002));
+        hostAndPortSet.add(new HostAndPort("120.79.254.32",7003));
+        hostAndPortSet.add(new HostAndPort("120.79.254.32",7004));
+        hostAndPortSet.add(new HostAndPort("120.79.254.32",7005));
+        hostAndPortSet.add(new HostAndPort("120.79.254.32",7006));
+        JedisCluster jedisCluster = new JedisCluster(hostAndPortSet);
+        return jedisCluster;
+    }
 }

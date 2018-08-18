@@ -17,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="publish-web" target="1.8" />
       <module name="tbook-common" target="6" />
       <module name="tbook-manager-interface" target="1.5" />
       <module name="tbook-manager-service" target="1.8" />

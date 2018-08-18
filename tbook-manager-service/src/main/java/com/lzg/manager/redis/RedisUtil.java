@@ -1,17 +1,14 @@
-package com.lzg.manager.service;
+package com.lzg.manager.redis;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 @Component
 public class RedisUtil {
@@ -126,6 +123,22 @@ public class RedisUtil {
             } else {
                 set(key, value);
             }
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * set not exist
+     *
+     * @param key 键
+     * @return
+     */
+    public boolean setnx(String key, Object value) {
+        try {
+            redisTemplate.opsForValue().setIfAbsent(key, value);
             return true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -560,5 +573,23 @@ public class RedisUtil {
             e.printStackTrace();
             return 0;
         }
+    }
+
+    public long ttl(String key) {
+        try {
+            return redisTemplate.getExpire(key);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+    }
+
+    public RedisTemplate getTemplate() {
+        try {
+            return redisTemplate;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

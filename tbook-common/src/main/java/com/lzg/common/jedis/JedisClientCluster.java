@@ -1,4 +1,4 @@
-/**package com.lzg.common.jedis;
+package com.lzg.common.jedis;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -54,5 +54,8 @@ public class JedisClientCluster implements JedisClient {
 		return jedisCluster.hdel(key, field);
 	}
 
+	public JedisCluster getJedisCluster() {
+		return jedisCluster;
+	}
+
 }
-*/

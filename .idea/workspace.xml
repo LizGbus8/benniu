@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b03d20b-0e69-44e2-95f5-efce1c716707" name="Default" comment="" />
+    <list default="true" id="6b03d20b-0e69-44e2-95f5-efce1c716707" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/redis/RedisLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/jedis/JedisClientCluster.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/jedis/JedisClientCluster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-common/tbook-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/tbook-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/tbook-manager-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/tbook-manager-interface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/MyRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/MyRedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/redis/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-order-interface/tbook-order-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-interface/tbook-order-interface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/test/java/com/lzg/tbook/order/service/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/test/java/com/lzg/tbook/order/service/OrderServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-publish-interface/tbook-publish-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-publish-interface/tbook-publish-interface.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-publish-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-publish-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/tbook-common/target/" />
     <ignored path="$PROJECT_DIR$/tbook-order-interface/target/" />
     <ignored path="$PROJECT_DIR$/tbook-order-service/target/" />
@@ -12,6 +37,7 @@
     <ignored path="$PROJECT_DIR$/tbook-sso-interface/target/" />
     <ignored path="$PROJECT_DIR$/tbook-manager-interface/target/" />
     <ignored path="$PROJECT_DIR$/tbook-manager-service/target/" />
+    <ignored path="$PROJECT_DIR$/publish-web/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +61,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tbook-common/pom.xml">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tbook-publish-service/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-222">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+            <state relative-caret-position="133">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding>
+                <element signature="e#94#282#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/publish-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -70,21 +108,17 @@
       <find>createO</find>
       <find>SellLis</find>
       <find>getClassMapper</find>
+      <find>20881</find>
+      <find>20880</find>
+      <find>2088</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tbook-publish-interface/src/main/java/com/lzg/publish/service/PublishService.java" />
-        <option value="$PROJECT_DIR$/tbook-common/src/main/resources/fdfs_client.conf" />
-        <option value="$PROJECT_DIR$/tbook-common/src/test/java/com/lzg/common/utlis/FastDFSClientTest.java" />
-        <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/FastDFSClient.java" />
-        <option value="$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/service/impl/PublishServiceImpl.java" />
-        <option value="$PROJECT_DIR$/tbook-manager-service/pom.xml" />
-        <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/jedis/JedisClientCluster.java" />
-        <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/jedis/JedisClientPool.java" />
-        <option value="$PROJECT_DIR$/tbook-manager-service/src/test/java/com/lzg/manager/TbookManagerServiceApplicationTests.java" />
-        <option value="$PROJECT_DIR$/tbook-manager-service/src/test/java/com/lzg/manager/service/ProductServiceImplTest.java" />
         <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/RedisUtil.java" />
         <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/JsonUtil.java" />
         <option value="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/TbookManagerServiceApplication.java" />
@@ -113,19 +147,29 @@
         <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/OrderStatusEnum.java" />
         <option value="$PROJECT_DIR$/tbook-order-service/pom.xml" />
         <option value="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/tbook-manager-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/dao/OrdersDao.java" />
         <option value="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/entity/Orders.java" />
         <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/config/MyAMQPConfig.java" />
         <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/converter/Gson2JsonMessageConverter.java" />
         <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/RedisUtil.java" />
         <option value="$PROJECT_DIR$/tbook-common/pom.xml" />
-        <option value="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/MyRedisConfig.java" />
         <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/listener/SellListener.java" />
+        <option value="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/redis/RedisUtil.java" />
         <option value="$PROJECT_DIR$/tbook-order-service/src/test/java/com/lzg/tbook/order/service/OrderServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tbook-manager-service/src/test/java/com/lzg/manager/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/MyRedisConfig.java" />
+        <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/jedis/JedisClientCluster.java" />
+        <option value="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/redis/RedisLock.java" />
+        <option value="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ProductService.java" />
+        <option value="$USER_HOME$/.m2/repository/com/101tec/zkclient/0.10/zkclient-0.10.pom" />
+        <option value="$USER_HOME$/.m2/repository/io/dubbo/springboot/spring-boot-starter-dubbo/1.0.0/spring-boot-starter-dubbo-1.0.0.pom" />
         <option value="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tbook-manager-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/tbook-publish-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/publish-web/pom.xml" />
       </list>
     </option>
   </component>
@@ -144,17 +188,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="tbook-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="tbook-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -164,57 +198,32 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
-    <option name="y" value="52" />
-    <option name="width" value="1268" />
-    <option name="height" value="717" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="11" />
+    <option name="y" value="51" />
+    <option name="width" value="1269" />
+    <option name="height" value="718" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="publish-web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,23 +260,23 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.lzg.common.utlis" />
       <recent name="com.lzg.manager.service" />
+      <recent name="com.lzg.common.utlis" />
       <recent name="com.lzg.manager" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lzg.manager.controller" />
+      <recent name="com.lzg.manager.service" />
       <recent name="com.lzg.tbook.order.config" />
       <recent name="com.lzg.common.enums" />
       <recent name="com.lzg.tbook.order.service.impl" />
-      <recent name="com.lzg.common.config" />
-      <recent name="com.lzg.common.enums.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-manager-service\src\main\java\com\lzg\manager" />
       <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-common\src\main\java\com\lzg\common\jedis" />
       <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-common\src\main\java\com\lzg\common\utlis" />
       <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-manager-service\src\main\java\com\lzg\manager\product\config" />
       <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-common\src\main\java\com\lzg\common\VO" />
-      <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-manager-service\src\main\java\com\lzg\manager\product" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.lzg.tbook.order.converter" />
@@ -285,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceImplTest.findSellList (1)">
+  <component name="RunManager" selected="Spring Boot.TbookOrderServiceApplication (1)">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -544,7 +553,8 @@
       <workItem from="1534087391871" duration="4255000" />
       <workItem from="1534124675404" duration="730000" />
       <workItem from="1534260632119" duration="648000" />
-      <workItem from="1534333818963" duration="1624000" />
+      <workItem from="1534333818963" duration="6352000" />
+      <workItem from="1534566330137" duration="6419000" />
     </task>
     <servers />
   </component>
@@ -581,7 +591,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165490000" />
+    <option name="totallyTimeSpent" value="176637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -608,15 +618,16 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35840708" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.4941003" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.5435746" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42330384" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43870014" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909255" visible="true" weight="0.2546917" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909255" visible="true" weight="0.32104558" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -624,7 +635,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.5442478" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3761062" />
@@ -632,9 +642,10 @@
     <layout-to-restore>
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29411766" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29411766" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.37758112" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -659,9 +670,8 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="1" sideWeight="0.5009074" side_tool="true" weight="0.2841823" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.37758112" />
-      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.464986" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,185 +691,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tbook-publish-interface/src/main/java/com/lzg/publish/entity/Publish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/dto/CartDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/KeyUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/JsonUtilByGson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/service/impl/PublishServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/ProductInfo.java" />
-    <entry file="file://$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/ContentStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-commons/1.13.13.RELEASE/spring-data-commons-1.13.13.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1094">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/entity/OrderMaster.java" />
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/converter/OrderMaster2OrderDTOConverter.java" />
-    <entry file="file://$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/dto/OrdersDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="18" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/test/java/com/lzg/tbook/order/TbookOrderServiceApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-commons/1.13.13.RELEASE/spring-data-commons-1.13.13.RELEASE-sources.jar!/org/springframework/data/annotation/CreatedDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/entity/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/converter/OrderDTO2OrderMasterConverter.java" />
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/config/MyAMQPConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-635">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/amqp/spring-amqp/1.7.8.RELEASE/spring-amqp-1.7.8.RELEASE.jar!/org/springframework/amqp/support/converter/AbstractJsonMessageConverter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/config/MyRedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/amqp/spring-amqp/1.7.8.RELEASE/spring-amqp-1.7.8.RELEASE.jar!/org/springframework/amqp/support/converter/DefaultClassMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/converter/Gson2JsonMessageConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/dao/ContentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/DruidConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Content.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tbook-manager-interface/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -898,38 +729,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5325">
-          <caret line="232" selection-start-line="232" selection-end-line="232" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/TbookManagerServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/OrderStatusEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/TbookOrderServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -961,38 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#1267#1268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#update#0;class#OrderServiceImpl#0" />
-            <element signature="method#findOrder#0;class#OrderServiceImpl#0" />
-            <element signature="method#findSellList#0;class#OrderServiceImpl#0" />
-            <element signature="method#findBuyList#0;class#OrderServiceImpl#0" />
-            <element signature="method#finished#0;class#OrderServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/MyRedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2147">
-          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1010,20 +781,1710 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/RedisUtil.java" />
     <entry file="file://$PROJECT_DIR$/tbook-order-service/src/test/java/com/lzg/tbook/order/service/OrderServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="228">
+          <caret line="66" column="13" lean-forward="true" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.13.RELEASE/spring-data-redis-1.8.13.RELEASE.jar!/org/springframework/data/redis/core/script/RedisScript.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.13.RELEASE/spring-data-redis-1.8.13.RELEASE.jar!/org/springframework/data/redis/core/script/DefaultRedisScript.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/test/java/com/lzg/manager/TbookManagerServiceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/jedis/JedisClientPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/jedis/JedisClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/MyRedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/jedis/JedisClientCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/JedisCluster.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-716">
+          <caret line="1374" column="22" selection-start-line="1374" selection-start-column="18" selection-end-line="1374" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/redis/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/JedisCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1730" column="16" selection-start-line="1730" selection-start-column="16" selection-end-line="1730" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/redis/RedisLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="91" column="75" selection-start-line="91" selection-start-column="75" selection-end-line="91" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-publish-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/dubbo/2.6.2/dubbo-2.6.2.jar!/com/alibaba/dubbo/config/annotation/Service.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/dubbo/2.6.2/dubbo-2.6.2-sources.jar!/com/alibaba/dubbo/config/annotation/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/io/dubbo/springboot/spring-boot-starter-dubbo/1.0.0/spring-boot-starter-dubbo-1.0.0.jar!/io/dubbo/springboot/DubboProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/io/dubbo/springboot/spring-boot-starter-dubbo/1.0.0/spring-boot-starter-dubbo-1.0.0.jar!/io/dubbo/springboot/DubboAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/io/dubbo/springboot/spring-boot-starter-dubbo/1.0.0/spring-boot-starter-dubbo-1.0.0-sources.jar!/io/dubbo/springboot/DubboAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/io/dubbo/springboot/spring-boot-starter-dubbo/1.0.0/spring-boot-starter-dubbo-1.0.0.jar!/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/repository/com/101tec/zkclient/0.10/zkclient-0.10.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/dubbo/2.6.2/dubbo-2.6.2-sources.jar!/com/alibaba/dubbo/remoting/zookeeper/curator/CuratorZookeeperClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.lzg:tbook-order-service:0.0.1-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.lzg:tbook-order-service:0.0.1-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="3902.808762378783" y="1610.0">com.lzg:tbook-order-service:0.0.1-SNAPSHOT</node>
+            <node x="348.3204174233815" y="1520.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE</node>
+            <node x="3630.2028730577495" y="850.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE</node>
+            <node x="4890.0" y="590.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot:jar:1.5.14.RELEASE</node>
+            <node x="4846.5" y="750.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:1.5.14.RELEASE</node>
+            <node x="3405.9528730577495" y="750.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE</node>
+            <node x="3211.2616354365323" y="590.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11</node>
+            <node x="3186.7616354365323" y="400.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11/ch.qos.logback:logback-core:jar:1.1.11</node>
+            <node x="3491.2616354365323" y="590.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.25</node>
+            <node x="3351.2616354365323" y="590.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/org.slf4j:log4j-over-slf4j:jar:1.7.25</node>
+            <node x="3622.9528730577495" y="750.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.yaml:snakeyaml:jar:1.17</node>
+            <node x="94.0" y="1400.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE</node>
+            <node x="210.75" y="1180.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.31</node>
+            <node x="201.75" y="1050.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.31/org.apache.tomcat:tomcat-annotations-api:jar:8.5.31</node>
+            <node x="0.0" y="1300.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.31</node>
+            <node x="155.0" y="1300.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.31</node>
+            <node x="672.25" y="1400.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final</node>
+            <node x="707.1698734898937" y="1300.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final/javax.validation:validation-api:jar:1.1.0.Final</node>
+            <node x="2009.4250952799716" y="590.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final</node>
+            <node x="599.1698734898937" y="1300.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final/com.fasterxml:classmate:jar:1.3.4</node>
+            <node x="1363.7254290454493" y="1180.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2</node>
+            <node x="1630.7254290454496" y="1050.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2/com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0</node>
+            <node x="1343.7254290454493" y="1050.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2/com.fasterxml.jackson.core:jackson-core:jar:2.8.11</node>
+            <node x="557.0" y="590.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE</node>
+            <node x="2612.2222222222226" y="300.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-aop:jar:4.3.18.RELEASE</node>
+            <node x="2937.5116354365323" y="170.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE</node>
+            <node x="1597.136635436532" y="400.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE</node>
+            <node x="326.0" y="750.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE</node>
+            <node x="370.75320682322763" y="300.0">org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE/org.springframework:spring-expression:jar:4.3.18.RELEASE</node>
+            <node x="5556.519476664497" y="1520.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE</node>
+            <node x="5291.0" y="1300.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-test:jar:1.5.14.RELEASE</node>
+            <node x="5161.25" y="1400.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:1.5.14.RELEASE</node>
+            <node x="6051.75" y="1400.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0</node>
+            <node x="6016.546722264099" y="1300.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1</node>
+            <node x="6000.546722264099" y="1180.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1/net.minidev:accessors-smart:jar:1.1</node>
+            <node x="6035.546722264099" y="1050.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1/net.minidev:accessors-smart:jar:1.1/org.ow2.asm:asm:jar:5.0.3</node>
+            <node x="4244.329114838547" y="400.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="5645.796722264099" y="1400.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/junit:junit:jar:4.12</node>
+            <node x="5398.25" y="1400.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.assertj:assertj-core:jar:2.6.0</node>
+            <node x="5869.796722264099" y="1400.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.mockito:mockito-core:jar:1.10.19</node>
+            <node x="5909.546722264099" y="1300.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.mockito:mockito-core:jar:1.10.19/org.objenesis:objenesis:jar:2.1</node>
+            <node x="5636.25" y="1300.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="5722.796722264099" y="1400.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.hamcrest:hamcrest-library:jar:1.3</node>
+            <node x="5518.25" y="1400.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.skyscreamer:jsonassert:jar:1.4.0</node>
+            <node x="5510.25" y="1300.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.skyscreamer:jsonassert:jar:1.4.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1</node>
+            <node x="2964.7653730577495" y="0.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE</node>
+            <node x="6109.5" y="170.0">org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-test:jar:4.3.18.RELEASE</node>
+            <node x="2802.6480480930686" y="1400.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT</node>
+            <node x="3746.308762378783" y="1180.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/org.projectlombok:lombok:jar:1.16.22</node>
+            <node x="2460.121262378783" y="1300.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT</node>
+            <node x="2357.8484149828473" y="1180.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/mysql:mysql-connector-java:jar:5.1.46</node>
+            <node x="2193.8484149828473" y="1180.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/com.alibaba:druid:jar:1.0.8</node>
+            <node x="3204.531976664497" y="1180.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE</node>
+            <node x="2707.5662180131503" y="1050.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:1.5.14.RELEASE</node>
+            <node x="2712.0116354365323" y="850.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:1.5.14.RELEASE/org.aspectj:aspectjweaver:jar:1.8.13</node>
+            <node x="3763.3139841688608" y="1050.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE</node>
+            <node x="3914.8023291242616" y="850.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.apache.tomcat:tomcat-jdbc:jar:8.5.31</node>
+            <node x="3919.3023291242616" y="750.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.apache.tomcat:tomcat-jdbc:jar:8.5.31/org.apache.tomcat:tomcat-juli:jar:8.5.31</node>
+            <node x="3104.7616354365323" y="750.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.springframework:spring-jdbc:jar:4.3.18.RELEASE</node>
+            <node x="1948.7254290454498" y="850.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final</node>
+            <node x="2483.308762378783" y="750.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
+            <node x="1799.7254290454496" y="750.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/antlr:antlr:jar:2.7.7</node>
+            <node x="1877.7254290454496" y="750.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/org.jboss:jandex:jar:2.0.0.Final</node>
+            <node x="2074.433762378783" y="750.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/dom4j:dom4j:jar:1.6.1</node>
+            <node x="2163.433762378783" y="750.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final</node>
+            <node x="2106.4250952799716" y="1050.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-entitymanager:jar:5.0.12.Final</node>
+            <node x="2528.9734149828473" y="1050.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/javax.transaction:javax.transaction-api:jar:1.2</node>
+            <node x="3344.4528730577495" y="1050.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE</node>
+            <node x="2881.7616354365323" y="850.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE/org.springframework:spring-orm:jar:4.3.18.RELEASE</node>
+            <node x="2899.5662180131503" y="1050.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework:spring-aspects:jar:4.3.18.RELEASE</node>
+            <node x="2276.8484149828473" y="1180.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/com.google.code.gson:gson:jar:2.8.5</node>
+            <node x="3592.308762378783" y="1180.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/net.oschina.zcx7878:fastdfs-client-java:jar:1.27.0.0</node>
+            <node x="3496.308762378783" y="1180.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/com.alibaba:fastjson:jar:1.1.37</node>
+            <node x="2535.8484149828473" y="1180.0">com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.jetbrains:annotations-java5:jar:16.0.2</node>
+            <node x="4228.594476664497" y="1520.0">com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT</node>
+            <node x="4508.0" y="750.0">com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE</node>
+            <node x="4208.029114838548" y="590.0">com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25</node>
+            <node x="3883.308762378783" y="1520.0">io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0</node>
+            <node x="1957.1495513464838" y="1400.0">io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2</node>
+            <node x="1968.7254290454496" y="750.0">io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2/org.javassist:javassist:jar:3.21.0-GA</node>
+            <node x="2293.2120513464833" y="1300.0">io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2/org.jboss.netty:netty:jar:3.2.5.Final</node>
+            <node x="3939.808762378783" y="1400.0">io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10</node>
+            <node x="3930.808762378783" y="1300.0">io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta</node>
+            <node x="3924.308762378783" y="1180.0">io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta/commons-cli:commons-cli:jar:1.2</node>
+            <node x="4051.308762378783" y="1180.0">io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta/org.apache.yetus:audience-annotations:jar:0.5.0</node>
+            <node x="3842.308762378783" y="1180.0">io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta/io.netty:netty:jar:3.10.6.Final</node>
+            <node x="4622.519476664497" y="1300.0">org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE</node>
+            <node x="4921.519476664497" y="1050.0">org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE</node>
+            <node x="4910.519476664497" y="850.0">org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.13.RELEASE</node>
+            <node x="2999.7616354365323" y="590.0">org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-tx:jar:4.3.18.RELEASE</node>
+            <node x="5154.75" y="300.0">org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-oxm:jar:4.3.18.RELEASE</node>
+            <node x="4701.0" y="590.0">org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-context-support:jar:4.3.18.RELEASE</node>
+            <node x="4320.535714285715" y="1180.0">org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/redis.clients:jedis:jar:2.9.0</node>
+            <node x="4286.035714285715" y="1050.0">org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/redis.clients:jedis:jar:2.9.0/org.apache.commons:commons-pool2:jar:2.4.3</node>
+            <node x="1389.834306312271" y="1520.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE</node>
+            <node x="1454.7254290454493" y="590.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework:spring-messaging:jar:4.3.18.RELEASE</node>
+            <node x="1126.3000952799716" y="1400.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE</node>
+            <node x="962.0865401565604" y="170.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/org.springframework.amqp:spring-amqp:jar:1.7.8.RELEASE</node>
+            <node x="841.0865401565607" y="170.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/org.springframework.retry:spring-retry:jar:1.2.2.RELEASE</node>
+            <node x="1158.7638888888891" y="1300.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE</node>
+            <node x="1138.0138888888891" y="1180.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE/org.apache.httpcomponents:httpclient:jar:4.5.5</node>
+            <node x="1240.7254290454493" y="1050.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE/org.apache.httpcomponents:httpclient:jar:4.5.5/org.apache.httpcomponents:httpcore:jar:4.4.9</node>
+            <node x="1090.7254290454493" y="1050.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE/org.apache.httpcomponents:httpclient:jar:4.5.5/commons-codec:commons-codec:jar:1.10</node>
+            <node x="1611.9754290454496" y="590.0">org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:amqp-client:jar:4.0.3</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-aop:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="-24.0" y="-15.0" />
+              <point x="2636.2222222222226" y="120.0" />
+              <point x="3002.2653730577495" y="120.0" />
+              <point x="-12.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE">
+              <point x="6.75" y="-15.0" />
+              <point x="1187.0500952799716" y="1350.0" />
+              <point x="1205.2638888888891" y="1350.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.jetbrains:annotations-java5:jar:16.0.2">
+              <point x="0.0" y="-15.0" />
+              <point x="2521.621262378783" y="1230.0" />
+              <point x="2603.3484149828473" y="1230.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-context-support:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="56.33333333333303" y="-15.0" />
+              <point x="4841.833333333333" y="560.0" />
+              <point x="5139.25" y="560.0" />
+              <point x="5139.25" y="110.0" />
+              <point x="3042.2653730577495" y="110.0" />
+              <point x="27.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="-50.833333333333485" y="-15.0" />
+              <point x="336.1666666666665" y="730.0" />
+              <point x="327.25320682322763" y="730.0" />
+              <point x="327.25320682322763" y="50.0" />
+              <point x="2967.2653730577495" y="50.0" />
+              <point x="-47.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/redis.clients:jedis:jar:2.9.0">
+              <point x="-69.66666666666697" y="-15.0" />
+              <point x="4657.35280999783" y="1280.0" />
+              <point x="4364.785714285715" y="1280.0" />
+              <point x="14.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:1.5.14.RELEASE">
+              <point x="-54.0" y="-15.0" />
+              <point x="5215.25" y="800.0" />
+              <point x="4988.25" y="800.0" />
+              <point x="47.25" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/org.springframework.retry:spring-retry:jar:1.2.2.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="891.5865401565607" y="80.0" />
+              <point x="2982.2653730577495" y="80.0" />
+              <point x="-32.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="4727.019476664497" y="990.0" />
+              <point x="3764.8457302006063" y="990.0" />
+              <point x="62.14285714285688" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="-14.75" y="-15.0" />
+              <point x="1641.386635436532" y="350.0" />
+              <point x="1659.886635436532" y="350.0" />
+              <point x="1659.886635436532" y="110.0" />
+              <point x="2997.2653730577495" y="110.0" />
+              <point x="-17.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE/org.springframework:spring-orm:jar:4.3.18.RELEASE">
+              <point x="-13.444444444444343" y="-15.0" />
+              <point x="3391.508428613305" y="930.0" />
+              <point x="2930.2616354365323" y="930.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="-26.888888888888687" y="-15.0" />
+              <point x="3378.0639841688608" y="940.0" />
+              <point x="2871.2616354365323" y="940.0" />
+              <point x="2871.2616354365323" y="130.0" />
+              <point x="3007.2653730577495" y="130.0" />
+              <point x="-7.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/org.springframework.retry:spring-retry:jar:1.2.2.RELEASE">
+              <point x="-33.75" y="-15.0" />
+              <point x="1146.5500952799716" y="1370.0" />
+              <point x="891.5865401565607" y="1370.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="78.18181818181802" y="-15.0" />
+              <point x="5720.701294846315" y="1500.0" />
+              <point x="6216.0" y="1500.0" />
+              <point x="6216.0" y="70.0" />
+              <point x="3062.2653730577495" y="70.0" />
+              <point x="47.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE/org.apache.httpcomponents:httpclient:jar:4.5.5" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE/org.apache.httpcomponents:httpclient:jar:4.5.5/org.apache.httpcomponents:httpcore:jar:4.4.9">
+              <point x="22.0" y="-15.0" />
+              <point x="1204.0138888888891" y="1160.0" />
+              <point x="1282.2254290454493" y="1160.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-tx:jar:4.3.18.RELEASE">
+              <point x="47.25" y="-15.0" />
+              <point x="1227.5500952799716" y="1380.0" />
+              <point x="1609.2254290454493" y="1380.0" />
+              <point x="1609.2254290454493" y="720.0" />
+              <point x="3006.7616354365323" y="720.0" />
+              <point x="-35.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final/com.fasterxml:classmate:jar:1.3.4">
+              <point x="-48.0" y="-15.0" />
+              <point x="696.25" y="1380.0" />
+              <point x="643.1698734898937" y="1380.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE/org.springframework:spring-orm:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="-36.375" y="-15.0" />
+              <point x="2893.8866354365323" y="820.0" />
+              <point x="2920.3241354365323" y="820.0" />
+              <point x="2920.3241354365323" y="140.0" />
+              <point x="3012.2653730577495" y="140.0" />
+              <point x="-2.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-oxm:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="-24.75" y="-15.0" />
+              <point x="5179.5" y="240.0" />
+              <point x="3041.0116354365323" y="240.0" />
+              <point x="49.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/org.projectlombok:lombok:jar:1.16.22">
+              <point x="44.75" y="-15.0" />
+              <point x="2936.8980480930686" y="1380.0" />
+              <point x="3784.308762378783" y="1380.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE" target="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25">
+              <point x="-60.375" y="-15.0" />
+              <point x="4528.125" y="690.0" />
+              <point x="4259.529114838548" y="690.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE" target="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE">
+              <point x="53.77777777777783" y="-15.0" />
+              <point x="3458.7306508355277" y="1030.0" />
+              <point x="3785.7028730577495" y="1030.0" />
+              <point x="3785.7028730577495" y="810.0" />
+              <point x="4534.833333333334" y="810.0" />
+              <point x="-53.666666666666515" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/junit:junit:jar:4.12" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="0.0" y="-15.0" />
+              <point x="5674.296722264099" y="1380.0" />
+              <point x="5679.75" y="1380.0" />
+              <point x="-14.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:1.5.14.RELEASE">
+              <point x="58.0" y="-15.0" />
+              <point x="3760.7028730577495" y="830.0" />
+              <point x="4893.75" y="830.0" />
+              <point x="-47.25" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE">
+              <point x="-14.58333333333303" y="-15.0" />
+              <point x="421.2370840900485" y="1470.0" />
+              <point x="588.6698734898937" y="1470.0" />
+              <point x="588.6698734898937" y="720.0" />
+              <point x="606.0" y="720.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-aop:jar:4.3.18.RELEASE">
+              <point x="37.714285714285325" y="-15.0" />
+              <point x="5025.233762378783" y="1020.0" />
+              <point x="5117.25" y="1020.0" />
+              <point x="5117.25" y="370.0" />
+              <point x="2700.2222222222226" y="370.0" />
+              <point x="40.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/org.slf4j:log4j-over-slf4j:jar:1.7.25" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="0.0" y="-15.0" />
+              <point x="3411.2616354365323" y="550.0" />
+              <point x="4271.279114838547" y="550.0" />
+              <point x="-11.550000000000182" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-aop:jar:4.3.18.RELEASE">
+              <point x="44.25" y="-15.0" />
+              <point x="1700.386635436532" y="380.0" />
+              <point x="2652.2222222222226" y="380.0" />
+              <point x="-8.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-service:0.0.1-SNAPSHOT" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE">
+              <point x="-64.28571428571422" y="-15.0" />
+              <point x="3913.5230480930686" y="1590.0" />
+              <point x="435.8204174233815" y="1590.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.apache.tomcat:tomcat-jdbc:jar:8.5.31" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.apache.tomcat:tomcat-jdbc:jar:8.5.31/org.apache.tomcat:tomcat-juli:jar:8.5.31">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta/io.netty:netty:jar:3.10.6.Final">
+              <point x="-31.333333333333485" y="-15.0" />
+              <point x="3946.4754290454493" y="1270.0" />
+              <point x="3873.308762378783" y="1270.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/com.google.code.gson:gson:jar:2.8.5">
+              <point x="-33.545454545454504" y="-15.0" />
+              <point x="2488.0758078333283" y="1260.0" />
+              <point x="2306.8484149828473" y="1260.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework:spring-messaging:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="1481.834306312271" y="1490.0" />
+              <point x="1620.2254290454493" y="1490.0" />
+              <point x="1620.2254290454493" y="680.0" />
+              <point x="1556.7254290454493" y="680.0" />
+              <point x="34.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE/org.apache.httpcomponents:httpclient:jar:4.5.5" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE/org.apache.httpcomponents:httpclient:jar:4.5.5/commons-codec:commons-codec:jar:1.10">
+              <point x="-22.0" y="-15.0" />
+              <point x="1160.0138888888891" y="1160.0" />
+              <point x="1155.7254290454493" y="1160.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-entitymanager:jar:5.0.12.Final" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final">
+              <point x="44.25" y="-15.0" />
+              <point x="2239.1750952799716" y="980.0" />
+              <point x="2599.558762378783" y="980.0" />
+              <point x="38.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="2991.5116354365323" y="150.0" />
+              <point x="3017.2653730577495" y="150.0" />
+              <point x="2.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-entitymanager:jar:5.0.12.Final">
+              <point x="-61.875" y="-15.0" />
+              <point x="3241.656976664497" y="1130.0" />
+              <point x="2194.9250952799716" y="1130.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2">
+              <point x="-63.0" y="-15.0" />
+              <point x="3914.808762378783" y="1500.0" />
+              <point x="1992.6495513464838" y="1500.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11/ch.qos.logback:logback-core:jar:1.1.11">
+              <point x="-30.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.assertj:assertj-core:jar:2.6.0">
+              <point x="-46.90909090909099" y="-15.0" />
+              <point x="5595.610385755406" y="1480.0" />
+              <point x="5448.25" y="1480.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="60.375" y="-15.0" />
+              <point x="4648.875" y="710.0" />
+              <point x="4601.25" y="710.0" />
+              <point x="4601.25" y="120.0" />
+              <point x="3037.2653730577495" y="120.0" />
+              <point x="22.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-tx:jar:4.3.18.RELEASE">
+              <point x="13.444444444444343" y="-15.0" />
+              <point x="3418.397317502194" y="910.0" />
+              <point x="3034.7616354365323" y="910.0" />
+              <point x="-7.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE">
+              <point x="11.181818181818016" y="-15.0" />
+              <point x="2532.803080560601" y="1240.0" />
+              <point x="3303.531976664497" y="1240.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE">
+              <point x="-61.33333333333337" y="-15.0" />
+              <point x="1420.5009729789376" y="1500.0" />
+              <point x="1180.3000952799716" y="1500.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/redis.clients:jedis:jar:2.9.0">
+              <point x="55.90909090909099" y="-15.0" />
+              <point x="2577.530353287874" y="1280.0" />
+              <point x="4335.285714285715" y="1280.0" />
+              <point x="-14.75" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2/org.javassist:javassist:jar:3.21.0-GA">
+              <point x="0.0" y="-15.0" />
+              <point x="1992.6495513464838" y="1370.0" />
+              <point x="1938.2254290454498" y="1370.0" />
+              <point x="1938.2254290454498" y="830.0" />
+              <point x="1981.8920957121163" y="830.0" />
+              <point x="-26.333333333333258" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="21.75" y="-15.0" />
+              <point x="6117.0" y="1380.0" />
+              <point x="6136.046722264099" y="1380.0" />
+              <point x="6136.046722264099" y="450.0" />
+              <point x="4317.4791148385475" y="450.0" />
+              <point x="34.65000000000009" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-aop:jar:4.3.18.RELEASE">
+              <point x="-40.333333333333485" y="-15.0" />
+              <point x="3364.6195397244164" y="950.0" />
+              <point x="2848.5116354365323" y="950.0" />
+              <point x="2848.5116354365323" y="380.0" />
+              <point x="2684.2222222222226" y="380.0" />
+              <point x="24.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11">
+              <point x="-73.5" y="-15.0" />
+              <point x="3430.4528730577495" y="730.0" />
+              <point x="3271.2616354365323" y="730.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.springframework:spring-jdbc:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-tx:jar:4.3.18.RELEASE">
+              <point x="-33.0" y="-15.0" />
+              <point x="3121.2616354365323" y="730.0" />
+              <point x="3048.7616354365323" y="730.0" />
+              <point x="7.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE">
+              <point x="-47.25" y="-15.0" />
+              <point x="1133.0500952799716" y="1380.0" />
+              <point x="867.1698734898937" y="1380.0" />
+              <point x="867.1698734898937" y="690.0" />
+              <point x="638.6666666666665" y="690.0" />
+              <point x="32.666666666666515" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2">
+              <point x="23.25" y="-15.0" />
+              <point x="1228.5138888888891" y="1280.0" />
+              <point x="1429.7254290454493" y="1280.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot:jar:1.5.14.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="5355.5" y="640.0" />
+              <point x="4975.0" y="640.0" />
+              <point x="34.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final">
+              <point x="34.0" y="-15.0" />
+              <point x="2042.2254290454498" y="820.0" />
+              <point x="2219.183762378783" y="820.0" />
+              <point x="-55.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.25">
+              <point x="24.5" y="-15.0" />
+              <point x="3528.4528730577495" y="730.0" />
+              <point x="3536.7616354365323" y="730.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="26.888888888888687" y="-15.0" />
+              <point x="3431.841761946638" y="900.0" />
+              <point x="3094.2616354365323" y="900.0" />
+              <point x="3094.2616354365323" y="530.0" />
+              <point x="4255.879114838547" y="530.0" />
+              <point x="-26.949999999999818" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1/net.minidev:accessors-smart:jar:1.1">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.13.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE">
+              <point x="30.800000000000182" y="-15.0" />
+              <point x="5018.319476664497" y="820.0" />
+              <point x="5057.0" y="820.0" />
+              <point x="5057.0" y="470.0" />
+              <point x="1708.5810798809764" y="470.0" />
+              <point x="52.44444444444434" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/org.springframework.amqp:spring-amqp:jar:1.7.8.RELEASE">
+              <point x="-20.25" y="-15.0" />
+              <point x="1160.0500952799716" y="1360.0" />
+              <point x="1015.5865401565604" y="1360.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE">
+              <point x="30.5" y="-15.0" />
+              <point x="417.5" y="720.0" />
+              <point x="573.3333333333335" y="720.0" />
+              <point x="-32.666666666666686" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot:jar:1.5.14.RELEASE">
+              <point x="29.0" y="-15.0" />
+              <point x="3731.7028730577495" y="830.0" />
+              <point x="3749.7028730577495" y="830.0" />
+              <point x="3749.7028730577495" y="730.0" />
+              <point x="4907.0" y="730.0" />
+              <point x="-34.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-aop:jar:4.3.18.RELEASE">
+              <point x="10.166666666666515" y="-15.0" />
+              <point x="397.1666666666665" y="710.0" />
+              <point x="528.2532068232276" y="710.0" />
+              <point x="528.2532068232276" y="360.0" />
+              <point x="2620.2222222222226" y="360.0" />
+              <point x="-40.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE/org.springframework:spring-orm:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="-12.125" y="-15.0" />
+              <point x="2918.1366354365323" y="830.0" />
+              <point x="2931.3866354365323" y="830.0" />
+              <point x="2931.3866354365323" y="270.0" />
+              <point x="2987.0116354365323" y="270.0" />
+              <point x="-4.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="0.0" y="-15.0" />
+              <point x="4259.529114838548" y="570.0" />
+              <point x="4286.679114838547" y="570.0" />
+              <point x="3.849999999999909" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE">
+              <point x="61.33333333333326" y="-15.0" />
+              <point x="1543.1676396456044" y="1500.0" />
+              <point x="1704.7254290454496" y="1500.0" />
+              <point x="1704.7254290454496" y="1160.0" />
+              <point x="2389.5245513464833" y="1160.0" />
+              <point x="2389.5245513464833" y="1010.0" />
+              <point x="3661.274301629178" y="1010.0" />
+              <point x="-41.42857142857156" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE">
+              <point x="36.75" y="-15.0" />
+              <point x="642.75" y="540.0" />
+              <point x="1603.6921909920877" y="540.0" />
+              <point x="-52.44444444444434" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-tx:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="-21.0" y="-15.0" />
+              <point x="3020.7616354365323" y="510.0" />
+              <point x="3031.7616354365323" y="510.0" />
+              <point x="3031.7616354365323" y="280.0" />
+              <point x="3005.0116354365323" y="280.0" />
+              <point x="13.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final">
+              <point x="48.0" y="-15.0" />
+              <point x="792.25" y="1380.0" />
+              <point x="831.4198734898937" y="1380.0" />
+              <point x="831.4198734898937" y="700.0" />
+              <point x="2023.4250952799716" y="700.0" />
+              <point x="-42.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-test:jar:4.3.18.RELEASE">
+              <point x="62.54545454545496" y="-15.0" />
+              <point x="5705.064931209952" y="1490.0" />
+              <point x="6157.5" y="1490.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2/org.javassist:javassist:jar:3.21.0-GA">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE">
+              <point x="61.875" y="-15.0" />
+              <point x="3365.406976664497" y="1150.0" />
+              <point x="3752.8139841688608" y="1150.0" />
+              <point x="3752.8139841688608" y="1020.0" />
+              <point x="3702.7028730577495" y="1020.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.mockito:mockito-core:jar:1.10.19" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="-27.75" y="-15.0" />
+              <point x="5897.546722264099" y="1370.0" />
+              <point x="5737.75" y="1370.0" />
+              <point x="43.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-aop:jar:4.3.18.RELEASE">
+              <point x="12.25" y="-15.0" />
+              <point x="618.25" y="370.0" />
+              <point x="2636.2222222222226" y="370.0" />
+              <point x="-24.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="-20.125" y="-15.0" />
+              <point x="4568.375" y="720.0" />
+              <point x="4579.25" y="720.0" />
+              <point x="4579.25" y="570.0" />
+              <point x="4294.379114838547" y="570.0" />
+              <point x="11.550000000000182" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE">
+              <point x="-72.91666666666674" y="-15.0" />
+              <point x="362.90375075671454" y="1500.0" />
+              <point x="190.0" y="1500.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE">
+              <point x="50.83333333333303" y="-15.0" />
+              <point x="437.83333333333303" y="730.0" />
+              <point x="665.5" y="730.0" />
+              <point x="665.5" y="550.0" />
+              <point x="1616.8033021031988" y="550.0" />
+              <point x="-39.33333333333326" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="14.75" y="-15.0" />
+              <point x="1670.886635436532" y="250.0" />
+              <point x="2969.0116354365323" y="250.0" />
+              <point x="-22.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.13.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="61.60000000000059" y="-15.0" />
+              <point x="5049.119476664498" y="830.0" />
+              <point x="5068.0" y="830.0" />
+              <point x="5068.0" y="460.0" />
+              <point x="4309.779114838547" y="460.0" />
+              <point x="26.949999999999818" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE">
+              <point x="-6.75" y="-15.0" />
+              <point x="1173.5500952799716" y="1350.0" />
+              <point x="1080.2254290454493" y="1350.0" />
+              <point x="1080.2254290454493" y="560.0" />
+              <point x="1629.91441321431" y="560.0" />
+              <point x="-26.22222222222217" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.13.RELEASE" target="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25">
+              <point x="0.0" y="-15.0" />
+              <point x="4987.519476664497" y="810.0" />
+              <point x="5046.0" y="810.0" />
+              <point x="5046.0" y="660.0" />
+              <point x="4300.729114838547" y="660.0" />
+              <point x="41.19999999999982" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE">
+              <point x="-23.666666666666742" y="-15.0" />
+              <point x="1968.982884679817" y="1380.0" />
+              <point x="1789.2254290454496" y="1380.0" />
+              <point x="1789.2254290454496" y="510.0" />
+              <point x="1656.136635436532" y="510.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:amqp-client:jar:4.0.3">
+              <point x="33.75" y="-15.0" />
+              <point x="1214.0500952799716" y="1370.0" />
+              <point x="1598.2254290454493" y="1370.0" />
+              <point x="1598.2254290454493" y="690.0" />
+              <point x="1662.9754290454496" y="690.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.mockito:mockito-core:jar:1.10.19" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.mockito:mockito-core:jar:1.10.19/org.objenesis:objenesis:jar:2.1">
+              <point x="27.75" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:1.5.14.RELEASE">
+              <point x="-78.18181818181802" y="-15.0" />
+              <point x="5564.337658482679" y="1500.0" />
+              <point x="5269.25" y="1500.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final/javax.validation:validation-api:jar:1.1.0.Final">
+              <point x="0.0" y="-15.0" />
+              <point x="744.25" y="1380.0" />
+              <point x="762.6698734898937" y="1380.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework:spring-messaging:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="1522.7254290454493" y="520.0" />
+              <point x="1386.5116354365318" y="520.0" />
+              <point x="1386.5116354365318" y="240.0" />
+              <point x="2960.0116354365323" y="240.0" />
+              <point x="-31.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.13.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-tx:jar:4.3.18.RELEASE">
+              <point x="-30.800000000000182" y="-15.0" />
+              <point x="4956.719476664497" y="810.0" />
+              <point x="4724.35" y="810.0" />
+              <point x="4724.35" y="670.0" />
+              <point x="3076.7616354365323" y="670.0" />
+              <point x="35.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.springframework:spring-jdbc:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="33.0" y="-15.0" />
+              <point x="3187.2616354365323" y="730.0" />
+              <point x="3176.2616354365323" y="730.0" />
+              <point x="3176.2616354365323" y="140.0" />
+              <point x="3027.2653730577495" y="140.0" />
+              <point x="12.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/dom4j:dom4j:jar:1.6.1">
+              <point x="17.0" y="-15.0" />
+              <point x="2025.2254290454498" y="810.0" />
+              <point x="2091.683762378783" y="810.0" />
+              <point x="-17.25" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE">
+              <point x="-43.75" y="-15.0" />
+              <point x="392.0704174233815" y="1500.0" />
+              <point x="387.0" y="1500.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/javax.transaction:javax.transaction-api:jar:1.2">
+              <point x="-37.125" y="-15.0" />
+              <point x="3266.406976664497" y="1120.0" />
+              <point x="2604.4734149828473" y="1120.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.apache.tomcat:tomcat-jdbc:jar:8.5.31">
+              <point x="58.666666666666515" y="-15.0" />
+              <point x="3909.9806508355273" y="1030.0" />
+              <point x="3966.8023291242616" y="1030.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/com.alibaba:druid:jar:1.0.8">
+              <point x="-44.72727272727252" y="-15.0" />
+              <point x="2476.8939896515103" y="1270.0" />
+              <point x="2225.3484149828473" y="1270.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE/org.springframework:spring-expression:jar:4.3.18.RELEASE">
+              <point x="-44.25" y="-15.0" />
+              <point x="1611.886635436532" y="350.0" />
+              <point x="472.75320682322763" y="350.0" />
+              <point x="34.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2/com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0">
+              <point x="-22.363636363636488" y="-15.0" />
+              <point x="2499.2576260151463" y="1250.0" />
+              <point x="2347.3484149828473" y="1250.0" />
+              <point x="2347.3484149828473" y="1150.0" />
+              <point x="1741.7254290454496" y="1150.0" />
+              <point x="37.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework:spring-messaging:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="-45.33333333333326" y="-15.0" />
+              <point x="1477.392095712116" y="530.0" />
+              <point x="1375.5116354365318" y="530.0" />
+              <point x="1375.5116354365318" y="100.0" />
+              <point x="2992.2653730577495" y="100.0" />
+              <point x="-22.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2/com.fasterxml.jackson.core:jackson-core:jar:2.8.11">
+              <point x="-33.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:amqp-client:jar:4.0.3" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="0.0" y="-15.0" />
+              <point x="1662.9754290454496" y="520.0" />
+              <point x="4248.179114838547" y="520.0" />
+              <point x="-34.65000000000009" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT" target="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE">
+              <point x="53.333333333333485" y="-15.0" />
+              <point x="4361.927809997831" y="1500.0" />
+              <point x="4424.535714285715" y="1500.0" />
+              <point x="4424.535714285715" y="820.0" />
+              <point x="4588.5" y="820.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE/org.springframework:spring-expression:jar:4.3.18.RELEASE">
+              <point x="-10.166666666666515" y="-15.0" />
+              <point x="376.8333333333335" y="710.0" />
+              <point x="349.25320682322763" y="710.0" />
+              <point x="349.25320682322763" y="380.0" />
+              <point x="404.75320682322763" y="380.0" />
+              <point x="-34.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-service:0.0.1-SNAPSHOT" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE">
+              <point x="42.85714285714266" y="-15.0" />
+              <point x="4020.6659052359255" y="1580.0" />
+              <point x="4727.019476664497" y="1580.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/org.jboss:jandex:jar:2.0.0.Final">
+              <point x="-34.0" y="-15.0" />
+              <point x="1974.2254290454498" y="810.0" />
+              <point x="1912.7254290454496" y="810.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-service:0.0.1-SNAPSHOT" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta/commons-cli:commons-cli:jar:1.2">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1/net.minidev:accessors-smart:jar:1.1" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1/net.minidev:accessors-smart:jar:1.1/org.ow2.asm:asm:jar:5.0.3">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="-12.25" y="-15.0" />
+              <point x="593.75" y="560.0" />
+              <point x="517.2532068232276" y="560.0" />
+              <point x="517.2532068232276" y="230.0" />
+              <point x="2951.0116354365323" y="230.0" />
+              <point x="-40.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/ch.qos.logback:logback-classic:jar:1.1.11" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="30.0" y="-15.0" />
+              <point x="3301.2616354365323" y="540.0" />
+              <point x="4263.579114838547" y="540.0" />
+              <point x="-19.25" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:1.5.14.RELEASE">
+              <point x="-12.375" y="-15.0" />
+              <point x="3291.156976664497" y="1110.0" />
+              <point x="2793.5662180131503" y="1110.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE">
+              <point x="-53.77777777777783" y="-15.0" />
+              <point x="3351.175095279972" y="960.0" />
+              <point x="2837.5116354365323" y="960.0" />
+              <point x="2837.5116354365323" y="500.0" />
+              <point x="1669.2477465476431" y="500.0" />
+              <point x="13.111111111111086" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT">
+              <point x="-53.333333333333485" y="-15.0" />
+              <point x="4255.261143331163" y="1490.0" />
+              <point x="2936.8980480930686" y="1490.0" />
+              <point x="44.75" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE">
+              <point x="37.125" y="-15.0" />
+              <point x="3340.656976664497" y="1140.0" />
+              <point x="3404.9528730577495" y="1140.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot:jar:1.5.14.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/org.projectlombok:lombok:jar:1.16.22">
+              <point x="0.0" y="-15.0" />
+              <point x="4308.594476664497" y="1260.0" />
+              <point x="3809.6420957121163" y="1260.0" />
+              <point x="25.333333333333485" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2/org.jboss.netty:netty:jar:3.2.5.Final">
+              <point x="23.666666666666742" y="-15.0" />
+              <point x="2016.3162180131505" y="1380.0" />
+              <point x="2324.2120513464833" y="1380.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.31" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.31">
+              <point x="0.0" y="-15.0" />
+              <point x="-37.75" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.101tec:zkclient:jar:0.10/org.apache.zookeeper:zookeeper:jar:3.5.4-beta/org.apache.yetus:audience-annotations:jar:0.5.0">
+              <point x="31.333333333333485" y="-15.0" />
+              <point x="4009.1420957121163" y="1270.0" />
+              <point x="4130.308762378783" y="1270.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-test:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="6157.5" y="80.0" />
+              <point x="3057.2653730577495" y="80.0" />
+              <point x="42.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/redis.clients:jedis:jar:2.9.0" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/redis.clients:jedis:jar:2.9.0/org.apache.commons:commons-pool2:jar:2.4.3">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-entitymanager:jar:5.0.12.Final" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final">
+              <point x="73.75" y="-15.0" />
+              <point x="2268.6750952799716" y="990.0" />
+              <point x="2648.808762378783" y="990.0" />
+              <point x="2648.808762378783" y="700.0" />
+              <point x="2107.4250952799716" y="700.0" />
+              <point x="42.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE">
+              <point x="69.66666666666697" y="-15.0" />
+              <point x="4796.686143331164" y="1280.0" />
+              <point x="4987.519476664497" y="1280.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE/org.springframework:spring-orm:jar:4.3.18.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.springframework:spring-jdbc:jar:4.3.18.RELEASE">
+              <point x="36.375" y="-15.0" />
+              <point x="2966.6366354365323" y="830.0" />
+              <point x="3129.5116354365323" y="830.0" />
+              <point x="-24.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.hamcrest:hamcrest-library:jar:1.3" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="0.0" y="-15.0" />
+              <point x="5786.296722264099" y="1380.0" />
+              <point x="5708.75" y="1380.0" />
+              <point x="14.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.25" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="0.0" y="-15.0" />
+              <point x="3536.7616354365323" y="560.0" />
+              <point x="4278.9791148385475" y="560.0" />
+              <point x="-3.849999999999909" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-context-support:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE">
+              <point x="-56.33333333333303" y="-15.0" />
+              <point x="4729.166666666667" y="490.0" />
+              <point x="1682.3588576587542" y="490.0" />
+              <point x="26.22222222222217" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.31">
+              <point x="-64.0" y="-15.0" />
+              <point x="126.0" y="1380.0" />
+              <point x="67.5" y="1380.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.13.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-service:0.0.1-SNAPSHOT" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE">
+              <point x="64.28571428571422" y="-15.0" />
+              <point x="4042.094476664497" y="1590.0" />
+              <point x="5642.519476664497" y="1590.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/mysql:mysql-connector-java:jar:5.1.46">
+              <point x="-11.181818181818016" y="-15.0" />
+              <point x="2510.439444196965" y="1240.0" />
+              <point x="2436.8484149828473" y="1240.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE/org.slf4j:log4j-over-slf4j:jar:1.7.25">
+              <point x="-24.5" y="-15.0" />
+              <point x="3479.4528730577495" y="720.0" />
+              <point x="3411.2616354365323" y="720.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-entitymanager:jar:5.0.12.Final" target="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2/org.javassist:javassist:jar:3.21.0-GA">
+              <point x="-44.25" y="-15.0" />
+              <point x="2150.6750952799716" y="980.0" />
+              <point x="2078.22542904545" y="980.0" />
+              <point x="2078.22542904545" y="800.0" />
+              <point x="2034.5587623787828" y="800.0" />
+              <point x="26.333333333333258" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE" target="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25">
+              <point x="73.5" y="-15.0" />
+              <point x="3577.4528730577495" y="710.0" />
+              <point x="4218.329114838547" y="710.0" />
+              <point x="-41.19999999999982" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-entitymanager:jar:5.0.12.Final" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/dom4j:dom4j:jar:1.6.1">
+              <point x="-14.75" y="-15.0" />
+              <point x="2180.1750952799716" y="970.0" />
+              <point x="2126.183762378783" y="970.0" />
+              <point x="17.25" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="25.5" y="-15.0" />
+              <point x="4966.5" y="570.0" />
+              <point x="5144.25" y="570.0" />
+              <point x="5144.25" y="100.0" />
+              <point x="3047.2653730577495" y="100.0" />
+              <point x="32.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.skyscreamer:jsonassert:jar:1.4.0">
+              <point x="-31.272727272727025" y="-15.0" />
+              <point x="5611.24674939177" y="1470.0" />
+              <point x="5563.25" y="1470.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-service:0.0.1-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT">
+              <point x="-21.42857142857156" y="-15.0" />
+              <point x="3956.3801909502113" y="1570.0" />
+              <point x="2847.3980480930686" y="1570.0" />
+              <point x="-44.75" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE">
+              <point x="-58.666666666666515" y="-15.0" />
+              <point x="3792.6473175021943" y="1010.0" />
+              <point x="3723.4171587720357" y="1010.0" />
+              <point x="20.71428571428578" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework:spring-aspects:jar:4.3.18.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:1.5.14.RELEASE/org.aspectj:aspectjweaver:jar:1.8.13">
+              <point x="0.0" y="-15.0" />
+              <point x="2958.0662180131503" y="970.0" />
+              <point x="2798.2616354365323" y="970.0" />
+              <point x="28.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-oxm:jar:4.3.18.RELEASE">
+              <point x="56.57142857142867" y="-15.0" />
+              <point x="5044.090905235926" y="1030.0" />
+              <point x="5204.25" y="1030.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2">
+              <point x="72.91666666666697" y="-15.0" />
+              <point x="508.7370840900485" y="1500.0" />
+              <point x="856.1698734898937" y="1500.0" />
+              <point x="856.1698734898937" y="1270.0" />
+              <point x="1385.7254290454493" y="1270.0" />
+              <point x="-44.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:1.5.14.RELEASE">
+              <point x="-58.0" y="-15.0" />
+              <point x="3644.7028730577495" y="830.0" />
+              <point x="3503.9528730577495" y="830.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final">
+              <point x="0.0" y="-15.0" />
+              <point x="2274.933762378783" y="710.0" />
+              <point x="2079.4250952799716" y="710.0" />
+              <point x="14.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.springframework:spring-jdbc:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="3154.2616354365323" y="730.0" />
+              <point x="3165.2616354365323" y="730.0" />
+              <point x="3165.2616354365323" y="270.0" />
+              <point x="3014.0116354365323" y="270.0" />
+              <point x="22.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="-15.636363636363967" y="-15.0" />
+              <point x="5626.883113028133" y="1500.0" />
+              <point x="5624.296722264099" y="1500.0" />
+              <point x="5624.296722264099" y="1380.0" />
+              <point x="5650.75" y="1380.0" />
+              <point x="-43.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.31" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.31/org.apache.tomcat:tomcat-annotations-api:jar:8.5.31">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-entitymanager:jar:5.0.12.Final" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final">
+              <point x="-73.75" y="-15.0" />
+              <point x="2121.1750952799716" y="990.0" />
+              <point x="2037.9754290454498" y="990.0" />
+              <point x="29.75" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE" target="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25">
+              <point x="40.333333333333485" y="-15.0" />
+              <point x="3445.2862063910834" y="990.0" />
+              <point x="3612.4528730577495" y="990.0" />
+              <point x="3612.4528730577495" y="720.0" />
+              <point x="4238.929114838547" y="720.0" />
+              <point x="-20.59999999999991" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE/org.springframework:spring-expression:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="438.75320682322763" y="70.0" />
+              <point x="2977.2653730577495" y="70.0" />
+              <point x="-37.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="3404.9528730577495" y="920.0" />
+              <point x="2989.2616354365323" y="920.0" />
+              <point x="2989.2616354365323" y="280.0" />
+              <point x="2996.0116354365323" y="280.0" />
+              <point x="4.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/antlr:antlr:jar:2.7.7">
+              <point x="-51.0" y="-15.0" />
+              <point x="1957.2254290454498" y="820.0" />
+              <point x="1828.7254290454496" y="820.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-aop:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="24.0" y="-15.0" />
+              <point x="2684.2222222222226" y="260.0" />
+              <point x="2978.0116354365323" y="260.0" />
+              <point x="-13.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-test:jar:1.5.14.RELEASE">
+              <point x="54.0" y="-15.0" />
+              <point x="-32.25" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="3702.7028730577495" y="820.0" />
+              <point x="3733.7616354365323" y="820.0" />
+              <point x="3733.7616354365323" y="130.0" />
+              <point x="3032.2653730577495" y="130.0" />
+              <point x="17.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final">
+              <point x="14.583333333333258" y="-15.0" />
+              <point x="450.40375075671454" y="1480.0" />
+              <point x="744.25" y="1480.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.data:spring-data-jpa:jar:1.11.13.RELEASE/org.springframework:spring-orm:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-tx:jar:4.3.18.RELEASE">
+              <point x="12.125" y="-15.0" />
+              <point x="2942.3866354365323" y="730.0" />
+              <point x="3020.7616354365323" y="730.0" />
+              <point x="-21.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT">
+              <point x="-44.75" y="-15.0" />
+              <point x="2847.3980480930686" y="1380.0" />
+              <point x="2521.621262378783" y="1380.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final">
+              <point x="-86.625" y="-15.0" />
+              <point x="3216.906976664497" y="1140.0" />
+              <point x="1978.4754290454498" y="1140.0" />
+              <point x="-29.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/org.springframework.amqp:spring-amqp:jar:1.7.8.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="1015.5865401565604" y="90.0" />
+              <point x="2987.2653730577495" y="90.0" />
+              <point x="-27.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.hibernate:hibernate-validator:jar:5.3.6.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final">
+              <point x="-17.0" y="-15.0" />
+              <point x="1991.2254290454498" y="800.0" />
+              <point x="1958.2254290454496" y="800.0" />
+              <point x="1958.2254290454496" y="710.0" />
+              <point x="2051.4250952799716" y="710.0" />
+              <point x="-14.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE/com.rabbitmq:http-client:jar:1.1.1.RELEASE/org.apache.httpcomponents:httpclient:jar:4.5.5">
+              <point x="-23.25" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-context-support:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="4785.5" y="550.0" />
+              <point x="5128.25" y="550.0" />
+              <point x="5128.25" y="250.0" />
+              <point x="3032.0116354365323" y="250.0" />
+              <point x="40.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0">
+              <point x="46.90909090909099" y="-15.0" />
+              <point x="5689.428567573588" y="1480.0" />
+              <point x="6095.25" y="1480.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.yaml:snakeyaml:jar:1.17">
+              <point x="-29.0" y="-15.0" />
+              <point x="3673.7028730577495" y="830.0" />
+              <point x="3668.9528730577495" y="830.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE">
+              <point x="43.75" y="-15.0" />
+              <point x="479.5704174233815" y="1490.0" />
+              <point x="845.1698734898937" y="1490.0" />
+              <point x="845.1698734898937" y="1000.0" />
+              <point x="3640.5600159148926" y="1000.0" />
+              <point x="-62.14285714285734" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-service:0.0.1-SNAPSHOT" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE">
+              <point x="-42.85714285714266" y="-15.0" />
+              <point x="3934.95161952164" y="1580.0" />
+              <point x="1481.834306312271" y="1580.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE">
+              <point x="57.333333333333485" y="-15.0" />
+              <point x="2850.899551346484" y="1020.0" />
+              <point x="3681.988587343464" y="1020.0" />
+              <point x="-20.71428571428578" y="15.0" />
+            </edge>
+            <edge source="io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE">
+              <point x="63.0" y="-15.0" />
+              <point x="4040.808762378783" y="1500.0" />
+              <point x="4275.535714285715" y="1500.0" />
+              <point x="4275.535714285715" y="1000.0" />
+              <point x="3744.131444486321" y="1000.0" />
+              <point x="41.42857142857156" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="-36.75" y="-15.0" />
+              <point x="569.25" y="570.0" />
+              <point x="360.25320682322763" y="570.0" />
+              <point x="360.25320682322763" y="60.0" />
+              <point x="2972.2653730577495" y="60.0" />
+              <point x="-42.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.31">
+              <point x="0.0" y="-15.0" />
+              <point x="190.0" y="1380.0" />
+              <point x="248.5" y="1380.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="-18.857142857143117" y="-15.0" />
+              <point x="4968.662333807354" y="960.0" />
+              <point x="4690.5" y="960.0" />
+              <point x="4690.5" y="560.0" />
+              <point x="4302.079114838547" y="560.0" />
+              <point x="19.25" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.mockito:mockito-core:jar:1.10.19">
+              <point x="31.272727272727025" y="-15.0" />
+              <point x="5673.792203937224" y="1470.0" />
+              <point x="5925.296722264099" y="1470.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE/org.springframework:spring-jdbc:jar:4.3.18.RELEASE">
+              <point x="0.0" y="-15.0" />
+              <point x="3851.3139841688608" y="1030.0" />
+              <point x="3904.3023291242616" y="1030.0" />
+              <point x="3904.3023291242616" y="800.0" />
+              <point x="3179.0116354365323" y="800.0" />
+              <point x="24.75" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:1.5.14.RELEASE/org.aspectj:aspectjweaver:jar:1.8.13">
+              <point x="0.0" y="-15.0" />
+              <point x="2793.5662180131503" y="980.0" />
+              <point x="2740.7616354365323" y="980.0" />
+              <point x="-28.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-context-support:jar:4.3.18.RELEASE">
+              <point x="18.857142857143117" y="-15.0" />
+              <point x="5006.37661952164" y="1010.0" />
+              <point x="5106.25" y="1010.0" />
+              <point x="5106.25" y="650.0" />
+              <point x="4785.5" y="650.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2">
+              <point x="-55.90909090909099" y="-15.0" />
+              <point x="2465.712171469692" y="1280.0" />
+              <point x="1473.7254290454493" y="1280.0" />
+              <point x="44.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:1.5.14.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.31">
+              <point x="64.0" y="-15.0" />
+              <point x="254.0" y="1380.0" />
+              <point x="352.5" y="1380.0" />
+              <point x="352.5" y="1280.0" />
+              <point x="324.0" y="1280.0" />
+              <point x="37.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-tx:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="21.0" y="-15.0" />
+              <point x="3062.7616354365323" y="150.0" />
+              <point x="3022.2653730577495" y="150.0" />
+              <point x="7.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="20.125" y="-15.0" />
+              <point x="4608.625" y="720.0" />
+              <point x="4590.25" y="720.0" />
+              <point x="4590.25" y="260.0" />
+              <point x="3023.0116354365323" y="260.0" />
+              <point x="31.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.skyscreamer:jsonassert:jar:1.4.0" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.skyscreamer:jsonassert:jar:1.4.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE" target="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25">
+              <point x="-37.714285714285325" y="-15.0" />
+              <point x="4949.805190950212" y="970.0" />
+              <point x="4679.5" y="970.0" />
+              <point x="4679.5" y="680.0" />
+              <point x="4280.129114838547" y="680.0" />
+              <point x="20.59999999999991" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/net.oschina.zcx7878:fastdfs-client-java:jar:1.27.0.0">
+              <point x="33.545454545454504" y="-15.0" />
+              <point x="2555.1667169242373" y="1260.0" />
+              <point x="3659.308762378783" y="1260.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-oxm:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework:spring-core:jar:4.3.18.RELEASE">
+              <point x="24.75" y="-15.0" />
+              <point x="5229.0" y="90.0" />
+              <point x="3052.2653730577495" y="90.0" />
+              <point x="37.5" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework.amqp:spring-rabbit:jar:1.7.8.RELEASE" target="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework:spring-messaging:jar:4.3.18.RELEASE">
+              <point x="20.25" y="-15.0" />
+              <point x="1200.5500952799716" y="1360.0" />
+              <point x="1506.2254290454493" y="1360.0" />
+              <point x="1506.2254290454493" y="690.0" />
+              <point x="1488.7254290454493" y="690.0" />
+              <point x="-34.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.hamcrest:hamcrest-library:jar:1.3">
+              <point x="15.636363636363967" y="-15.0" />
+              <point x="5658.155840300861" y="1460.0" />
+              <point x="5786.296722264099" y="1460.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-aop:jar:4.3.18.RELEASE">
+              <point x="-57.333333333333485" y="-15.0" />
+              <point x="2736.232884679817" y="990.0" />
+              <point x="2666.558762378783" y="990.0" />
+              <point x="2666.558762378783" y="380.0" />
+              <point x="2668.2222222222226" y="380.0" />
+              <point x="8.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-webmvc:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-beans:jar:4.3.18.RELEASE">
+              <point x="-30.5" y="-15.0" />
+              <point x="356.5" y="720.0" />
+              <point x="338.25320682322763" y="720.0" />
+              <point x="338.25320682322763" y="220.0" />
+              <point x="2942.0116354365323" y="220.0" />
+              <point x="-49.5" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:1.5.14.RELEASE">
+              <point x="86.625" y="-15.0" />
+              <point x="3390.156976664497" y="1160.0" />
+              <point x="3851.3139841688608" y="1160.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-entitymanager:jar:5.0.12.Final" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final">
+              <point x="14.75" y="-15.0" />
+              <point x="2209.6750952799716" y="970.0" />
+              <point x="2330.683762378783" y="970.0" />
+              <point x="55.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-amqp:jar:1.5.14.RELEASE/org.springframework:spring-messaging:jar:4.3.18.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE">
+              <point x="45.33333333333334" y="-15.0" />
+              <point x="1568.0587623787826" y="570.0" />
+              <point x="1643.025524325421" y="570.0" />
+              <point x="-13.111111111111086" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.hibernate:hibernate-core:jar:5.0.12.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final">
+              <point x="51.0" y="-15.0" />
+              <point x="2059.22542904545" y="830.0" />
+              <point x="2522.058762378783" y="830.0" />
+              <point x="-38.75" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-test:jar:1.5.14.RELEASE">
+              <point x="-62.54545454545496" y="-15.0" />
+              <point x="5579.974022119042" y="1490.0" />
+              <point x="5387.75" y="1490.0" />
+              <point x="32.25" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/com.jayway.jsonpath:json-path:jar:2.2.0/net.minidev:json-smart:jar:2.2.1">
+              <point x="-21.75" y="-15.0" />
+              <point x="6073.5" y="1380.0" />
+              <point x="6063.046722264099" y="1380.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/com.alibaba:fastjson:jar:1.1.37">
+              <point x="22.363636363636488" y="-15.0" />
+              <point x="2543.9848987424193" y="1250.0" />
+              <point x="3534.308762378783" y="1250.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT/org.springframework.boot:spring-boot-starter-data-jpa:jar:1.5.14.RELEASE/org.springframework:spring-aspects:jar:4.3.18.RELEASE">
+              <point x="12.375" y="-15.0" />
+              <point x="3315.906976664497" y="1100.0" />
+              <point x="2958.0662180131503" y="1100.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.13.RELEASE" target="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT/org.springframework.data:spring-data-commons:jar:1.13.13.RELEASE">
+              <point x="-61.59999999999991" y="-15.0" />
+              <point x="4925.919476664497" y="820.0" />
+              <point x="4642.166666666667" y="820.0" />
+              <point x="53.66666666666697" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/com.lzg:tbook-common:jar:1.0-SNAPSHOT" target="com.lzg:tbook-manager-interface:jar:1.0-SNAPSHOT/org.projectlombok:lombok:jar:1.16.22">
+              <point x="44.72727272727252" y="-15.0" />
+              <point x="2566.3485351060554" y="1270.0" />
+              <point x="3758.9754290454493" y="1270.0" />
+              <point x="-25.333333333333485" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE" target="org.springframework.boot:spring-boot-starter-data-redis:jar:1.5.14.RELEASE/org.springframework.data:spring-data-redis:jar:1.8.13.RELEASE/org.springframework:spring-tx:jar:4.3.18.RELEASE">
+              <point x="-56.57142857142844" y="-15.0" />
+              <point x="4930.948048093069" y="980.0" />
+              <point x="4497.5" y="980.0" />
+              <point x="4497.5" y="700.0" />
+              <point x="3062.7616354365323" y="700.0" />
+              <point x="21.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-test:jar:1.5.14.RELEASE/junit:junit:jar:4.12">
+              <point x="0.0" y="-15.0" />
+              <point x="5642.519476664497" y="1450.0" />
+              <point x="5674.296722264099" y="1450.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.8.11.2/com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0">
+              <point x="33.0" y="-15.0" />
+              <point x="1462.7254290454493" y="1160.0" />
+              <point x="1667.7254290454496" y="1160.0" />
+              <point x="-37.0" y="15.0" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot-starter:jar:1.5.14.RELEASE/org.springframework.boot:spring-boot:jar:1.5.14.RELEASE" target="org.springframework.boot:spring-boot-starter-web:jar:1.5.14.RELEASE/org.springframework:spring-web:jar:4.3.18.RELEASE/org.springframework:spring-context:jar:4.3.18.RELEASE">
+              <point x="-25.5" y="-15.0" />
+              <point x="4915.5" y="480.0" />
+              <point x="1695.4699687698653" y="480.0" />
+              <point x="39.33333333333326" y="15.0" />
+            </edge>
+            <edge source="com.lzg:tbook-order-service:0.0.1-SNAPSHOT" target="com.lzg:tbook-order-interface:jar:1.0-SNAPSHOT">
+              <point x="21.42857142857156" y="-15.0" />
+              <point x="3999.2373338073544" y="1570.0" />
+              <point x="4308.594476664497" y="1570.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7870290096698899" x="1260.9442867432106" y="1340.9442867432106" />
+          <SelectedNodes>
+            <node>io.dubbo.springboot:spring-boot-starter-dubbo:jar:1.0.0/com.alibaba:dubbo:jar:2.6.2</node>
+          </SelectedNodes>
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/repository/io/dubbo/springboot/spring-boot-starter-dubbo/1.0.0/spring-boot-starter-dubbo-1.0.0.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-order-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/dubbo/2.6.0/dubbo-2.6.0.jar!/com/alibaba/dubbo/config/annotation/Service.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="method#findContentById#0;class#ContentServiceImpl#0" />
+            <element signature="method#saveContent#0;class#ContentServiceImpl#0" />
+            <element signature="method#updateContent#0;class#ContentServiceImpl#0" />
+            <element signature="method#increaseStock#0;class#ContentServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/TbookManagerServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/TbookOrderServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#update#0;class#OrderServiceImpl#0" />
+            <element signature="method#findOrder#0;class#OrderServiceImpl#0" />
+            <element signature="method#findBuyList#0;class#OrderServiceImpl#0" />
+            <element signature="method#finished#0;class#OrderServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tbook-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
+        <state relative-caret-position="1083">
           <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-publish-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#94#282#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publish-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1079,7 +2540,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>tbook-manager-service</last-edited>
+          <last-edited>tbook-publish-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

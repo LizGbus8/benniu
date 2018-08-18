@@ -1,9 +1,9 @@
-#设置端口，避免冲突
 server:
   port: 8082
 
-#配置dubbo
 spring:
+  aop:
+    proxy-target-class: true
   dubbo:
     application:
       name: managerService
