@@ -1,0 +1,10 @@
+server:
+  port: 8084
+
+spring:
+  dubbo:
+    application:
+      name: contentweb
+    registry:
+      address: zookeeper://120.79.254.32:2181
+    scan: com.lzg.tbook.content.web.controller

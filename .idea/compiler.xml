@@ -7,18 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tbook-common" />
+        <module name="tbook-content-web" />
         <module name="tbook-manager-interface" />
         <module name="tbook-manager-service" />
         <module name="tbook-order-interface" />
         <module name="tbook-order-service" />
-        <module name="tbook-publish-interface" />
-        <module name="tbook-publish-service" />
         <module name="tbook-sso-interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="publish-web" target="1.8" />
       <module name="tbook-common" target="6" />
+      <module name="tbook-content-web" target="1.8" />
       <module name="tbook-manager-interface" target="1.5" />
       <module name="tbook-manager-service" target="1.8" />
       <module name="tbook-order-interface" target="1.5" />

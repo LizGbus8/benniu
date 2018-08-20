@@ -27,6 +27,9 @@ public class ContentServiceImpl implements ContentService {
     private ContentDao contentDao;
 
     @Autowired
+    private CategoryService categoryService;
+
+    @Autowired
     private RedisUtil redisUtil;
 
     @Autowired
@@ -72,13 +75,13 @@ public class ContentServiceImpl implements ContentService {
         String contentId = CONTENT + KeyUtil.getKey();
         content.setContentId(contentId);
 
-        //TODO 设置类目
-
         /** 设置内容状态 */
         content.setContentStatus(ContentStatusEnum.UP.getCode());
 
         /** 初始化点赞数 */
         content.setContentStar(0);
+
+        System.out.println(content);
 
         /** 内容入库 */
         contentDao.save(content);

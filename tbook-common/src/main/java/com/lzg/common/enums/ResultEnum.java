@@ -17,7 +17,8 @@ public enum ResultEnum {
     ORDERS_UPDATE_ERROR(6,"订单更新失败"),
     FORM_PARAM_ERROR(7,"表单参数错误"),
     BUYER_OPENID_ERROR(8,"当前用户ID不一致"),
-    PULISH_NOT_EXIST(9,"发布不存在")
+    PULISH_NOT_EXIST(9,"发布不存在"),
+    CATEGORY_NOT_EXIST(9,"类目不存在")
     ;
     private Integer code;
 

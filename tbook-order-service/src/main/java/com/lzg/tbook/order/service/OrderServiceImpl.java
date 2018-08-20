@@ -51,7 +51,6 @@ public class OrderServiceImpl implements OrderService {
 
     private static final String ORDERS = "orders";
 
-    private static final String ORDERS_PAGE = "ordersPage";
 
     @Override
     @Transactional
@@ -70,7 +69,7 @@ public class OrderServiceImpl implements OrderService {
         /** 设置订单状态 */
         ordersDTO.setOrderStatus(OrderStatusEnum.NEW.getCode());
 
-        //TODO 扣库存
+        /** 扣除库存 */
         contentService.decreaseStock(findContent.getContentId());
 
         /** 订单入库 */

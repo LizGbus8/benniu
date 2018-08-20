@@ -1,6 +1,7 @@
 package com.lzg.manager.entity;
 
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
@@ -16,6 +17,7 @@ import java.util.Date;
 @Data
 @Entity
 @DynamicUpdate
+@DynamicInsert
 public class Content implements Serializable {
     /** 内容id */
     @Id

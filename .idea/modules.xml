@@ -3,12 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/tbook-common/tbook-common.iml" filepath="$PROJECT_DIR$/tbook-common/tbook-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tbook-content-web/tbook-content-web.iml" filepath="$PROJECT_DIR$/tbook-content-web/tbook-content-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/tbook-manager-interface/tbook-manager-interface.iml" filepath="$PROJECT_DIR$/tbook-manager-interface/tbook-manager-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/tbook-manager-service/tbook-manager-service.iml" filepath="$PROJECT_DIR$/tbook-manager-service/tbook-manager-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/tbook-order-interface/tbook-order-interface.iml" filepath="$PROJECT_DIR$/tbook-order-interface/tbook-order-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/tbook-order-service/tbook-order-service.iml" filepath="$PROJECT_DIR$/tbook-order-service/tbook-order-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tbook-publish-interface/tbook-publish-interface.iml" filepath="$PROJECT_DIR$/tbook-publish-interface/tbook-publish-interface.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tbook-publish-service/tbook-publish-service.iml" filepath="$PROJECT_DIR$/tbook-publish-service/tbook-publish-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/tbook-sso-interface/tbook-sso-interface.iml" filepath="$PROJECT_DIR$/tbook-sso-interface/tbook-sso-interface.iml" />
     </modules>
   </component>
