@@ -2,60 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b03d20b-0e69-44e2-95f5-efce1c716707" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/TbookContentWebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/controller/ContentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/form/ContentForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/test/java/com/lzg/tbook/content/web/TbookContentWebApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/entity/Category.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/service/CategoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/dao/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-search-interface/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-search-interface/src/main/java/com/lzg/tbook/search/entity/SearchItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-search-interface/src/main/java/com/lzg/tbook/search/entity/SearchResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-search-interface/tbook-search-interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-search-service/src/main/java/com/lzg/tbook/search/mapper/SearchItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-search-service/src/main/resources/mapper/SearchItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-search-service/src/test/java/com/lzg/tbook/search/mapper/SearchItemMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tbook-search-service/src/test/java/com/lzg/tbook/search/solrServer/SolrServerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/enums/ResultEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Content.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/entity/Content.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/entity/Content.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-interface/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-interface/src/main/java/com/lzg/product/dto/CartDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-interface/src/main/java/com/lzg/product/entity/ProductInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-interface/src/main/java/com/lzg/product/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-interface/target/classes/com/lzg/product/dto/CartDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-interface/target/classes/com/lzg/product/entity/ProductInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-interface/target/classes/com/lzg/product/service/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-interface/tbook-product-interface.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-service/src/main/java/com/lzg/tbook/product/TbookProductServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-service/src/main/java/com/lzg/tbook/product/config/DruidConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-service/src/main/java/com/lzg/tbook/product/dao/ProductDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-service/src/main/java/com/lzg/tbook/product/service/impl/ProductServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-service/src/test/java/com/lzg/tbook/product/TbookProductServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-product-service/src/test/java/com/lzg/tbook/product/service/impl/ProductServiceImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-interface/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-interface/src/main/java/com/lzg/publish/dto/PublishDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-interface/src/main/java/com/lzg/publish/entity/Publish.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-interface/src/main/java/com/lzg/publish/service/PublishService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-interface/tbook-publish-interface.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/TbookPublishServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/config/DruidConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/dao/PublishDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/service/impl/PublishServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-publish-service/src/test/java/com/lzg/tbook/publish/TbookPublishServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/TbookManagerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/TbookManagerServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/TbookOrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/TbookOrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tbook-sso-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-sso-interface/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tbook-common/target/" />
     <ignored path="$PROJECT_DIR$/tbook-order-interface/target/" />
@@ -69,6 +32,8 @@
     <ignored path="$PROJECT_DIR$/tbook-manager-service/target/" />
     <ignored path="$PROJECT_DIR$/publish-web/target/" />
     <ignored path="$PROJECT_DIR$/tbook-content-web/target/" />
+    <ignored path="$PROJECT_DIR$/tbook-search-interface/target/" />
+    <ignored path="$PROJECT_DIR$/tbook-search-service/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,59 +57,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ContentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/controller/ContentController.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tbook-search-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="115">
+              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContentServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tbook-search-service/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
+            <state relative-caret-position="297">
+              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Content.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Content.java">
+      <file leaf-file-name="SearchItemMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tbook-search-service/src/main/resources/mapper/SearchItemMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="266">
+              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TbookManagerServiceApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/TbookManagerServiceApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TbookContentWebApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/TbookContentWebApplication.java">
+      <file leaf-file-name="TbookSearchServiceApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tbook-search-service/src/main/java/com/lzg/tbook/search/TbookSearchServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContentForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/form/ContentForm.java">
+      <file leaf-file-name="SearchItemMapperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tbook-search-service/src/test/java/com/lzg/tbook/search/mapper/SearchItemMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state relative-caret-position="392">
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,11 +105,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Orders.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/entity/Orders.java">
+      <file leaf-file-name="SolrServerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tbook-search-service/src/test/java/com/lzg/tbook/search/solrServer/SolrServerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="14" />
+            <state relative-caret-position="171">
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpSolrClient.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/5.5.5/solr-solrj-5.5.5-sources.jar!/org/apache/solr/client/solrj/impl/HttpSolrClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="160" column="9" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
+              <folding>
+                <element signature="e#6298#6299#0" expanded="true" />
+                <element signature="e#6355#6356#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SolrServer.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/5.5.5/solr-solrj-5.5.5-sources.jar!/org/apache/solr/client/solrj/SolrServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#984#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SolrClient.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/5.5.5/solr-solrj-5.5.5-sources.jar!/org/apache/solr/client/solrj/SolrClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tbook-search-interface/src/main/java/com/lzg/tbook/search/entity/SearchItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,8 +169,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -198,19 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/ProductInfo.java" />
-        <option value="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/service/ProductService.java" />
-        <option value="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/service/ContentService.java" />
-        <option value="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/dao/ContentDao.java" />
-        <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/ContentStatusEnum.java" />
-        <option value="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/entity/OrderMaster.java" />
-        <option value="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/dto/OrderDTO.java" />
-        <option value="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/dto/OrdersDTO.java" />
-        <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/dao/OrderDao.java" />
-        <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/converter/OrderDTO2OrderMasterConverter.java" />
-        <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/converter/OrderMaster2OrderDTOConverter.java" />
-        <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/OrdersTypeEnum.java" />
-        <option value="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/OrderStatusEnum.java" />
         <option value="$PROJECT_DIR$/tbook-order-service/pom.xml" />
         <option value="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/service/OrderService.java" />
         <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/dao/OrdersDao.java" />
@@ -249,6 +238,19 @@
         <option value="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Category.java" />
         <option value="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Content.java" />
+        <option value="$PROJECT_DIR$/tbook-search-service/src/main/java/com/lzg/tbook/search/TbookSearchServiceApplication.java" />
+        <option value="$PROJECT_DIR$/tbook-search-interface/src/main/java/entity/SearchResult.java" />
+        <option value="$PROJECT_DIR$/tbook-search-interface/src/main/java/entity/SearchItem.java" />
+        <option value="$PROJECT_DIR$/tbook-search-service/src/main/java/com/lzg/tbook/search/mapper/searchMapper.java" />
+        <option value="$PROJECT_DIR$/tbook-search-interface/src/main/java/com/lzg/tbook/search/entity/SearchResult.java" />
+        <option value="$PROJECT_DIR$/tbook-search-service/src/main/java/com/lzg/tbook/search/mapper/SearchMapper.java" />
+        <option value="$PROJECT_DIR$/tbook-search-service/src/test/java/com/lzg/tbook/search/mapper/SearchMapperTest.java" />
+        <option value="$PROJECT_DIR$/tbook-search-service/src/test/java/com/lzg/tbook/search/mapper/SearchItemMapperTest.java" />
+        <option value="$PROJECT_DIR$/tbook-search-service/src/main/resources/mapper/SearchItemMapper.xml" />
+        <option value="$PROJECT_DIR$/tbook-search-interface/src/main/java/com/lzg/tbook/search/entity/SearchItem.java" />
+        <option value="$PROJECT_DIR$/tbook-search-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/tbook-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-search-service/src/test/java/com/lzg/tbook/search/solrServer/SolrServerTest.java" />
       </list>
     </option>
   </component>
@@ -277,9 +279,9 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-8" />
-    <option name="width" value="1009" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="957" />
+    <option name="width" value="972" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -294,49 +296,115 @@
           <expand>
             <path>
               <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-order-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="tbook-search-interface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-order-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="tbook-search-interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-order-interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-order-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="tbook-search-interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-order-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="tbook-search-interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbook-order-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="tbook-search-interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbook-search-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="solrServer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,6 +415,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="SearchEverywhereHistoryKey" value="n&#9;FILE&#9;file://C:/Users/LizG/Desktop/tbook/tbook/tbook-order-service/src/main" />
+    <property name="ToolWindowRun Dashboard.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -359,15 +428,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lzg.tbook.search.mapper" />
       <recent name="com.lzg.tbook.order.service" />
       <recent name="com.lzg.manager.service" />
       <recent name="com.lzg.common.utlis" />
       <recent name="com.lzg.tbook.order.service.impl" />
-      <recent name="com.lzg.tbook.product.service.impl" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -385,17 +454,22 @@
       <recent name="com.lzg.tbook.order.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-search-service\src\main\resources\mapper" />
       <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-manager-service\src\main\java\com\lzg\manager" />
       <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-common\src\main\java\com\lzg\common\jedis" />
       <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-common\src\main\java\com\lzg\common\utlis" />
       <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-manager-service\src\main\java\com\lzg\manager\product\config" />
-      <recent name="C:\Users\LizG\Desktop\tbook\tbook\tbook-common\src\main\java\com\lzg\common\VO" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.lzg.tbook.order.converter" />
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -407,32 +481,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TbookManagerServiceApplication (1)">
+  <component name="RunManager" selected="JUnit.SolrServerTest.testAddDocument">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="OrderServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tbook-order-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lzg.tbook.order.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lzg.tbook.order.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.lzg.tbook.order.service.impl.OrderServiceImplTest" />
-      <option name="METHOD_NAME" value="findSellList" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="OrderServiceImplTest.createBuyOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tbook-order-service" />
@@ -480,29 +531,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="OrderServiceImplTest.findSellList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tbook-order-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lzg.tbook.order.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lzg.tbook.order.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.lzg.tbook.order.service.impl.OrderServiceImplTest" />
-      <option name="METHOD_NAME" value="findSellList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="OrderServiceImplTest.finished1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tbook-order-service" />
       <extension name="coverage">
@@ -516,6 +544,52 @@
       <option name="PACKAGE_NAME" value="com.lzg.tbook.order.service" />
       <option name="MAIN_CLASS_NAME" value="com.lzg.tbook.order.service.OrderServiceImplTest" />
       <option name="METHOD_NAME" value="finished1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SearchItemMapperTest.getItemList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tbook-search-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzg.tbook.search.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lzg.tbook.search.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.lzg.tbook.search.mapper.SearchItemMapperTest" />
+      <option name="METHOD_NAME" value="getItemList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="SolrServerTest.testAddDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tbook-search-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzg.tbook.search.solrServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lzg.tbook.search.solrServer" />
+      <option name="MAIN_CLASS_NAME" value="com.lzg.tbook.search.solrServer.SolrServerTest" />
+      <option name="METHOD_NAME" value="testAddDocument" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -586,6 +660,14 @@
       <module name="tbook-publish-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lzg.tbookpublishservice.TbookPublishServiceApplication" />
     </configuration>
+    <configuration name="TbookSearchServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="tbook-search-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lzg.tbook.search.TbookSearchServiceApplication" />
+    </configuration>
+    <configuration name="TbookSearchServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="tbook-search-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lzg.tbooksearchservice.TbookSearchServiceApplication" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -620,19 +702,21 @@
       <item itemvalue="Spring Boot.TbookOrderServiceApplication (1)" />
       <item itemvalue="Spring Boot.TbookContentWebApplication" />
       <item itemvalue="Spring Boot.TbookContentWebApplication (1)" />
-      <item itemvalue="JUnit.OrderServiceImplTest.findSellList" />
-      <item itemvalue="JUnit.OrderServiceImplTest" />
+      <item itemvalue="Spring Boot.TbookSearchServiceApplication" />
       <item itemvalue="JUnit.OrderServiceImplTest.createBuyOrder" />
       <item itemvalue="JUnit.OrderServiceImplTest.finished1" />
       <item itemvalue="JUnit.OrderServiceImplTest.findSellList (1)" />
+      <item itemvalue="JUnit.SearchItemMapperTest.getItemList" />
+      <item itemvalue="Spring Boot.TbookSearchServiceApplication (1)" />
+      <item itemvalue="JUnit.SolrServerTest.testAddDocument" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolrServerTest.testAddDocument" />
+        <item itemvalue="JUnit.SearchItemMapperTest.getItemList" />
         <item itemvalue="JUnit.OrderServiceImplTest.findSellList (1)" />
         <item itemvalue="JUnit.OrderServiceImplTest.finished1" />
         <item itemvalue="JUnit.OrderServiceImplTest.createBuyOrder" />
-        <item itemvalue="JUnit.OrderServiceImplTest.findSellList" />
-        <item itemvalue="JUnit.OrderServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -680,44 +764,46 @@
       <workItem from="1534566330137" duration="8528000" />
       <workItem from="1534659737468" duration="6276000" />
       <workItem from="1534688678263" duration="8988000" />
-      <workItem from="1534753432699" duration="4738000" />
+      <workItem from="1534753432699" duration="5383000" />
+      <workItem from="1534851184151" duration="5568000" />
+      <workItem from="1534857598729" duration="4250000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrderServiceImplTest_createBuyOrder - 2018.08.12 at 18h 25m 15s.xml">
-      <configuration name="OrderServiceImplTest.createBuyOrder" configurationId="JUnit" />
+    <history-entry file="SearchItemMapperTest_getItemList - 2018.08.21 at 21h 37m 49s.xml">
+      <configuration name="SearchItemMapperTest.getItemList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_createBuyOrder - 2018.08.12 at 18h 26m 57s.xml">
-      <configuration name="OrderServiceImplTest.createBuyOrder" configurationId="JUnit" />
+    <history-entry file="SearchItemMapperTest_getItemList - 2018.08.21 at 21h 42m 52s.xml">
+      <configuration name="SearchItemMapperTest.getItemList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_createBuyOrder - 2018.08.12 at 18h 28m 53s.xml">
-      <configuration name="OrderServiceImplTest.createBuyOrder" configurationId="JUnit" />
+    <history-entry file="SolrServerTest_testAddDocument - 2018.08.21 at 22h 10m 10s.xml">
+      <configuration name="SolrServerTest.testAddDocument" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_finished1 - 2018.08.12 at 23h 48m 40s.xml">
-      <configuration name="OrderServiceImplTest.finished1" configurationId="JUnit" />
+    <history-entry file="SolrServerTest_testAddDocument - 2018.08.21 at 22h 10m 58s.xml">
+      <configuration name="SolrServerTest.testAddDocument" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_findSellList_(1) - 2018.08.12 at 23h 58m 19s.xml">
-      <configuration name="OrderServiceImplTest.findSellList (1)" configurationId="JUnit" />
+    <history-entry file="SolrServerTest_testAddDocument - 2018.08.21 at 22h 11m 38s.xml">
+      <configuration name="SolrServerTest.testAddDocument" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_findSellList_(1) - 2018.08.12 at 23h 59m 32s.xml">
-      <configuration name="OrderServiceImplTest.findSellList (1)" configurationId="JUnit" />
+    <history-entry file="SolrServerTest_testAddDocument - 2018.08.21 at 22h 13m 02s.xml">
+      <configuration name="SolrServerTest.testAddDocument" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_findSellList_(1) - 2018.08.13 at 00h 14m 02s.xml">
-      <configuration name="OrderServiceImplTest.findSellList (1)" configurationId="JUnit" />
+    <history-entry file="SolrServerTest_testAddDocument - 2018.08.21 at 22h 16m 58s.xml">
+      <configuration name="SolrServerTest.testAddDocument" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_findSellList_(1) - 2018.08.13 at 00h 16m 13s.xml">
-      <configuration name="OrderServiceImplTest.findSellList (1)" configurationId="JUnit" />
+    <history-entry file="SolrServerTest_testAddDocument - 2018.08.21 at 22h 19m 32s.xml">
+      <configuration name="SolrServerTest.testAddDocument" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_findSellList_(1) - 2018.08.13 at 00h 18m 49s.xml">
-      <configuration name="OrderServiceImplTest.findSellList (1)" configurationId="JUnit" />
+    <history-entry file="SolrServerTest_testAddDocument - 2018.08.21 at 22h 20m 23s.xml">
+      <configuration name="SolrServerTest.testAddDocument" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OrderServiceImplTest_findSellList_(1) - 2018.08.13 at 00h 22m 48s.xml">
-      <configuration name="OrderServiceImplTest.findSellList (1)" configurationId="JUnit" />
+    <history-entry file="SolrServerTest_testAddDocument - 2018.08.21 at 22h 20m 49s.xml">
+      <configuration name="SolrServerTest.testAddDocument" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198748000" />
+    <option name="totallyTimeSpent" value="209211000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -729,86 +815,63 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="0" width="807" height="830" extended-state="1" />
+    <frame x="766" y="0" width="777" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32890856" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32908848" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32890856" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32780084" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
       <window_info id="Structure" order="1" sideWeight="0.5009074" side_tool="true" weight="0.2841823" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35764375" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.4941003" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.5982275" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.35764375" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.4941003" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.43049327" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36335403" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909255" visible="true" weight="0.25367156" />
+      <window_info anchor="bottom" auto_hide="true" id="Run Dashboard" order="0" type="SLIDING" weight="0.53028065" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.25663716" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.47981367" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909255" weight="0.34993085" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3761062" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.37518463" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29411766" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32890856" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.35250738" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.082633056" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32908848" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909255" visible="true" weight="0.22493573" />
-      <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Structure" order="1" sideWeight="0.5009074" side_tool="true" weight="0.2841823" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.37758112" />
-      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.464986" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -817,169 +880,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/4.3.18.RELEASE/spring-context-4.3.18.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="112" column="20" selection-start-line="112" selection-start-column="20" selection-end-line="112" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/EnableAutoConfigurationImportSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="91" column="76" selection-start-line="91" selection-start-column="76" selection-end-line="91" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/AutoConfigurationMetadataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="52" column="59" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="69" />
-          <folding>
-            <element signature="docComment;class#SpringBootApplication#0" />
-            <element signature="docComment;method#scanBasePackages#0;class#SpringBootApplication#0" />
-            <element signature="docComment;method#scanBasePackageClasses#0;class#SpringBootApplication#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot/1.5.14.RELEASE/spring-boot-1.5.14.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="147" column="13" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/4.3.18.RELEASE/spring-context-4.3.18.RELEASE-sources.jar!/org/springframework/context/ApplicationContextInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE.jar!/META-INF/spring.factories">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/AbstractDatabaseInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot/1.5.14.RELEASE/spring-boot-1.5.14.RELEASE-sources.jar!/org/springframework/boot/context/properties/ConfigurationProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/redis/RedisRepositoriesAutoConfigureRegistrar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="72" column="27" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/redis/RedisRepositoriesAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.14.RELEASE/spring-boot-autoconfigure-1.5.14.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="250" selection-start-line="250" selection-end-line="250" />
-          <folding>
-            <element signature="docComment;class#RedisAutoConfiguration#0" />
-            <element signature="e#2614#2628#0" />
-            <element signature="docComment;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="e#2852#2866#0" />
-            <element signature="class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="method#RedisConnectionConfiguration#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="e#3534#3539#0" />
-            <element signature="method#redisConnectionFactory#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="method#applyProperties#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="method#configureConnection#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="method#configureConnectionFromUrl#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="method#getSentinelConfig#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="docComment;method#getClusterConfiguration#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="method#getClusterConfiguration#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="method#createSentinels#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="method#createJedisConnectionFactory#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="method#jedisPoolConfig#0;class#RedisConnectionConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="docComment;class#RedisConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="class#RedisConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="e#7925#7930#0" />
-            <element signature="method#redisTemplate#0;class#RedisConfiguration#0;class#RedisAutoConfiguration#0" />
-            <element signature="e#8288#8293#0" />
-            <element signature="method#stringRedisTemplate#0;class#RedisConfiguration#0;class#RedisAutoConfiguration#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-356">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/GeneratedValue.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/GeneratedValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-manager-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="993">
-          <caret line="55" column="21" selection-start-line="50" selection-start-column="8" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tbook-content-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -998,10 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,9 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,27 +943,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-publish-interface/src/main/java/com/lzg/publish/dto/PublishDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-publish-interface/src/main/java/com/lzg/publish/service/PublishService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-566">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-publish-interface/src/main/java/com/lzg/publish/dto/PublishDTO.java" />
+    <entry file="file://$PROJECT_DIR$/tbook-publish-interface/src/main/java/com/lzg/publish/service/PublishService.java" />
     <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/TbookOrderServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1096,9 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1113,15 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-72">
           <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
-          <folding>
-            <element signature="e#1628#1637#0" />
-            <element signature="method#update#0;class#OrderServiceImpl#0" />
-            <element signature="method#findOrder#0;class#OrderServiceImpl#0" />
-            <element signature="method#findSellList#0;class#OrderServiceImpl#0" />
-            <element signature="method#findBuyList#0;class#OrderServiceImpl#0" />
-            <element signature="method#finished#0;class#OrderServiceImpl#0" />
-            <element signature="method#close#0;class#OrderServiceImpl#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,9 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,20 +1022,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/TbookContentWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/form/ContentForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1184,40 +1033,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/dao/PublishDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-publish-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-publish-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/service/impl/PublishServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/dao/PublishDao.java" />
+    <entry file="file://$PROJECT_DIR$/tbook-publish-service/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/tbook-publish-interface/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/tbook-publish-service/src/main/java/com/lzg/tbook/publish/service/impl/PublishServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1229,6 +1051,175 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/TbookContentWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-interface/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="78" column="43" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-order-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="37" selection-end-column="81" />
+          <folding>
+            <element signature="e#268#1086#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/config/MyAMQPConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/config/MyRedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-interface/src/main/java/com/lzg/tbook/search/entity/SearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/listener/SellListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-service/src/main/java/com/lzg/tbook/search/mapper/SearchItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-interface/src/main/java/com/lzg/tbook/search/entity/SearchItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-service/src/main/java/com/lzg/tbook/search/TbookSearchServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-service/src/main/resources/mapper/SearchItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/5.5.5/solr-solrj-5.5.5.jar!/org/apache/solr/client/solrj/SolrServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/5.5.5/solr-solrj-5.5.5-sources.jar!/org/apache/solr/client/solrj/SolrClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/5.5.5/solr-solrj-5.5.5-sources.jar!/org/apache/solr/client/solrj/SolrServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-service/src/test/java/com/lzg/tbook/search/mapper/SearchItemMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/5.5.5/solr-solrj-5.5.5-sources.jar!/org/apache/solr/client/solrj/impl/HttpSolrClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="160" column="9" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
+          <folding>
+            <element signature="e#6298#6299#0" expanded="true" />
+            <element signature="e#6355#6356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tbook-search-service/src/test/java/com/lzg/tbook/search/solrServer/SolrServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -8,10 +8,11 @@
         <option value="$PROJECT_DIR$/tbook-order-service/pom.xml" />
         <option value="$PROJECT_DIR$/tbook-publish-interface/pom.xml" />
         <option value="$PROJECT_DIR$/tbook-publish-service/pom.xml" />
-        <option value="$PROJECT_DIR$/tbook-sso-interface/pom.xml" />
         <option value="$PROJECT_DIR$/tbook-manager-interface/pom.xml" />
         <option value="$PROJECT_DIR$/tbook-manager-service/pom.xml" />
         <option value="$PROJECT_DIR$/tbook-content-web/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-search-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-search-service/pom.xml" />
       </list>
     </option>
   </component>

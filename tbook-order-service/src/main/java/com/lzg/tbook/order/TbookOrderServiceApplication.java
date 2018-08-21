@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
-@EntityScan(basePackages={"com.lzg.order.entity"})
+@EntityScan(basePackages={"com.lzg.order.com.lzg.tbook.search.entity"})
 public class TbookOrderServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(TbookOrderServiceApplication.class, args);
