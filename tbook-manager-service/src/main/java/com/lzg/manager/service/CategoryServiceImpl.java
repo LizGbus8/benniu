@@ -28,6 +28,11 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
+    public Category findCategoryByName(String name) {
+        return categoryDao.findByCategoryName(name);
+    }
+
+    @Override
     public Category add(Category category) {
         return categoryDao.save(category);
     }

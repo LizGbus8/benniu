@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/tbook-content-web/pom.xml" />
         <option value="$PROJECT_DIR$/tbook-search-interface/pom.xml" />
         <option value="$PROJECT_DIR$/tbook-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-sso-service/pom.xml" />
+        <option value="$PROJECT_DIR$/tbook-sso-interface/pom.xml" />
       </list>
     </option>
   </component>

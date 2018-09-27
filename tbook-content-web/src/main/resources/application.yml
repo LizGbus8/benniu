@@ -8,3 +8,8 @@ spring:
     registry:
       address: zookeeper://120.79.254.32:2181
     scan: com.lzg.tbook.content.web.controller
+  redis:
+    password:
+# redis.cluster
+    cluster:
+      nodes: 120.79.254.32:7001,120.79.254.32:7002,120.79.254.32:7003,120.79.254.32:7004,120.79.254.32:7005,120.79.254.32:7006

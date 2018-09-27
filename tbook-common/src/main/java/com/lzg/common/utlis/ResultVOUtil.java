@@ -23,6 +23,19 @@ public class ResultVOUtil {
     }
 
     /**
+     * 描述: 自定义
+     *
+     * @return
+     * @Param
+     */
+    public static ResultVO custom(Integer code,String msg) {
+        ResultVO<Object> resultVO = new ResultVO<Object>();
+        resultVO.setCode(code);
+        resultVO.setMsg(msg);
+        return resultVO;
+    }
+
+    /**
      * 描述: 成功（没有data）
      * @Param
      * @return

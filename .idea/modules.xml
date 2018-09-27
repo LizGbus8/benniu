@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/tbook-order-service/tbook-order-service.iml" filepath="$PROJECT_DIR$/tbook-order-service/tbook-order-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/tbook-search-interface/tbook-search-interface.iml" filepath="$PROJECT_DIR$/tbook-search-interface/tbook-search-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/tbook-search-service/tbook-search-service.iml" filepath="$PROJECT_DIR$/tbook-search-service/tbook-search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tbook-sso-interface/tbook-sso-interface.iml" filepath="$PROJECT_DIR$/tbook-sso-interface/tbook-sso-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tbook-sso-service/tbook-sso-service.iml" filepath="$PROJECT_DIR$/tbook-sso-service/tbook-sso-service.iml" />
     </modules>
   </component>
 </project>

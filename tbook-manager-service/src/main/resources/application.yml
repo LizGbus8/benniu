@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8090
 
 spring:
   aop:
@@ -57,7 +57,13 @@ spring:
       min-idle: 0
 # 连接超时时间（毫秒）
     timeout: 0
-    commandTimeout: 5000
+    cache:
+      commandTimeout: 5000
 # redis.cluster
     cluster:
       nodes: 120.79.254.32:7001,120.79.254.32:7002,120.79.254.32:7003,120.79.254.32:7004,120.79.254.32:7005,120.79.254.32:7006
+#  rabbitMQ服务器地址
+  rabbitmq:
+      host: 120.79.254.32
+      username: guest
+      password: guest

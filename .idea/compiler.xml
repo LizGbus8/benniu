@@ -14,23 +14,21 @@
         <module name="tbook-order-service" />
         <module name="tbook-search-interface" />
         <module name="tbook-search-service" />
+        <module name="tbook-sso-interface" />
+        <module name="tbook-sso-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="publish-web" target="1.8" />
-      <module name="tbook-common" target="6" />
+    <bytecodeTargetLevel target="8">
+      <module name="tbook-common" target="7" />
       <module name="tbook-content-web" target="1.8" />
       <module name="tbook-manager-interface" target="1.5" />
       <module name="tbook-manager-service" target="1.8" />
       <module name="tbook-order-interface" target="1.5" />
       <module name="tbook-order-service" target="1.8" />
-      <module name="tbook-product-interface" target="1.5" />
-      <module name="tbook-product-service" target="1.8" />
-      <module name="tbook-publish-interface" target="1.5" />
-      <module name="tbook-publish-service" target="1.8" />
       <module name="tbook-search-interface" target="1.5" />
       <module name="tbook-search-service" target="1.8" />
       <module name="tbook-sso-interface" target="1.5" />
+      <module name="tbook-sso-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

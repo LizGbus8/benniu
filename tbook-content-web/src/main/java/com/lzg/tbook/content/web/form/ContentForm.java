@@ -12,11 +12,10 @@ import java.math.BigDecimal;
 @Data
 public class ContentForm {
 
-    @NotNull
-    private String userId;
+    private String openid;
 
     @NotNull
-    private Integer categoryType;
+    private String categoryName;
 
     @NotNull
     private String productTitle;
@@ -36,5 +35,14 @@ public class ContentForm {
 
     @NotNull
     private Integer productStock;
+
+    @NotNull
+    private String contactType;
+
+    @NotNull
+    private String contactNum;
+
+    @NotNull
+    private String schoolName;
 
 }

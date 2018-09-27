@@ -18,7 +18,13 @@ public enum ResultEnum {
     FORM_PARAM_ERROR(7,"表单参数错误"),
     BUYER_OPENID_ERROR(8,"当前用户ID不一致"),
     PULISH_NOT_EXIST(9,"发布不存在"),
-    CATEGORY_NOT_EXIST(9,"类目不存在")
+    CATEGORY_NOT_EXIST(10,"类目不存在"),
+    SCHOOL_NOT_EXIST(11,"类目不存在"),
+    HAS_USER(12,"用户已存在"),
+    VERIFY_ERROR(13,"验证错误"),
+    NOT_HAS_LOGIN(14,"未登录"),
+    NOT_HAS_Register(15,"未注册"),
+    TOKEN_ERROT(16,"token error")
     ;
     private Integer code;
 

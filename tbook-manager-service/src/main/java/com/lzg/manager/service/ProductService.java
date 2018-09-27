@@ -1,8 +1,7 @@
 package com.lzg.manager.service;
 
-import com.lzg.common.exception.TBookException;
+import com.lzg.common.redis.RedisLock;
 import com.lzg.common.utlis.KeyUtil;
-import com.lzg.manager.redis.RedisLock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +15,8 @@ import java.util.Map;
 @Service
 public class ProductService {
 
-    @Autowired
-    RedisLock redisLock;
+    //@Autowired
+    private RedisLock redisLock;
     //商品
     static Map<String,Integer> product = new HashMap<>();
 

@@ -3,6 +3,7 @@ package com.lzg.common.utlis;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
+import java.util.UUID;
 
 /**
  * 作者：LizG on 2018/7/23 16:34
@@ -30,5 +31,10 @@ public class KeyUtil {
         number = random.nextInt(900000) + 100000;
         key.append(number.toString());
         return key.toString();
+    }
+
+    public static synchronized String getToken() {
+        UUID uuid = UUID.randomUUID();
+        return uuid.toString();
     }
 }

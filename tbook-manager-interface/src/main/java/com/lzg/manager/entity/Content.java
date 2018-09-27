@@ -51,6 +51,12 @@ public class Content implements Serializable {
     /** 库存 */
     private Integer productStock;
 
+    /** 联系方式 */
+    private String contact;
+
+    /** 浏览数 */
+    private Integer content_read;
+
     /** 创建时间 */
     private Date createTime;
 
