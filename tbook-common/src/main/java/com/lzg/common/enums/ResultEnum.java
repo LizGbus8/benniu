@@ -8,6 +8,7 @@ import lombok.Getter;
  */
 @Getter
 public enum ResultEnum {
+    UNKOWN(-1,"未知"),
     SUCCESS(0,"成功"),
     CONTENT_NOT_EXIST(1,"内容不存在"),
     CONTENT_STOCK_ERROR(2,"内容库存错误"),
@@ -19,12 +20,13 @@ public enum ResultEnum {
     BUYER_OPENID_ERROR(8,"当前用户ID不一致"),
     PULISH_NOT_EXIST(9,"发布不存在"),
     CATEGORY_NOT_EXIST(10,"类目不存在"),
-    SCHOOL_NOT_EXIST(11,"类目不存在"),
+    SCHOOL_NOT_EXIST(11,"学校不存在"),
     HAS_USER(12,"用户已存在"),
     VERIFY_ERROR(13,"验证错误"),
     NOT_HAS_LOGIN(14,"未登录"),
     NOT_HAS_Register(15,"未注册"),
-    TOKEN_ERROT(16,"token error")
+    TOKEN_ERROT(16,"token error"),
+    IMAGE_ERROT(16,"图片不存在")
     ;
     private Integer code;
 

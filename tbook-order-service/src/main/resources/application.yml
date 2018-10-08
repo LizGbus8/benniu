@@ -12,7 +12,7 @@ spring:
     protocol:
       name: dubbo
       port: 20881
-    scan: com.lzg.tbook.order.service
+    scan: com.lzg.tbook.order
 
   datasource:
       username: root

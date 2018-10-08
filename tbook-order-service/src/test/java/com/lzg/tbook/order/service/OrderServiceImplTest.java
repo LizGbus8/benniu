@@ -1,7 +1,7 @@
 package com.lzg.tbook.order.service;
 
+import com.lzg.manager.dto.OrdersDTO;
 import com.lzg.manager.entity.Content;
-import com.lzg.order.dto.OrdersDTO;
 import com.lzg.order.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
@@ -10,8 +10,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
@@ -32,10 +30,6 @@ public class OrderServiceImplTest {
         OrdersDTO ordersDTO = new OrdersDTO();
         ordersDTO.setUserId("3366");
         ordersDTO.setContent(content);
-        ordersDTO.setBuyerId("837422051");
-        ordersDTO.setBuyerPhone("13602799701");
-        ordersDTO.setBuyerAddress("华南农业大学");
-        ordersDTO.setBuyerNickName("L");
         return ordersDTO;
     }
 

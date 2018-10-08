@@ -1,6 +1,6 @@
 package com.lzg.order.service;
 
-import com.lzg.order.dto.OrdersDTO;
+import com.lzg.manager.dto.OrdersDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -26,5 +26,5 @@ public interface OrderService {
 
     //TODO 删除订单
 
-    OrdersDTO close(String ordersId);
+    OrdersDTO changeStatus(String ordersId,Integer status);
 }

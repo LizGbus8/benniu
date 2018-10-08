@@ -35,8 +35,11 @@ public class User implements Serializable {
     /** 学校代码 */
     private String schoolcode;
 
-    /** 学校代码 */
+    /** 兴趣 */
     private Integer interest;
+
+    /** 联系方式 */
+    private String contact;
 
     /** 创建时间 */
     private Date createTime;

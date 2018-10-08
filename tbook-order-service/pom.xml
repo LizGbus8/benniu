@@ -50,7 +50,14 @@
 
         <dependency>
             <groupId>com.lzg</groupId>
-            <artifactId>tbook-manager-interface</artifactId>
+            <artifactId>tbook-sso-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.lzg</groupId>
+            <artifactId>tbook-order-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -60,7 +67,6 @@
             <artifactId>spring-boot-starter-dubbo</artifactId>
             <version>1.0.0</version>
         </dependency>
-
         <!-- 整合redis -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

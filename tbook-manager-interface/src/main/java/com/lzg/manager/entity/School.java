@@ -21,7 +21,7 @@ import java.util.Date;
 public class School implements Serializable {
 
     @Id
-    private String Id;
+    private Integer Id;
 
     private String schoolid;
 
@@ -30,8 +30,4 @@ public class School implements Serializable {
     private String schoolname;
 
     private String province;
-
-    private Date createTime;
-
-    private Date updateTime;
 }

@@ -11,8 +11,8 @@ spring:
       address: zookeeper://120.79.254.32:2181
     protocol:
       name: dubbo
-      port: 20880
-    scan: com.lzg.sso.service
+      port: 20882
+    scan: com.lzg.sso.service,com.lzg.sso.controller
 #配置druid配置源
   jpa:
     show-sql: true

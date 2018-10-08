@@ -1,5 +1,7 @@
 package com.lzg.manager.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.lzg.common.utlis.serializer.Date2StringSerialize;
 import lombok.Data;
 
 import javax.persistence.Id;
@@ -32,8 +34,10 @@ public class UserDTO {
     private Integer interest;
 
     /** 创建时间 */
+    @JsonSerialize(using = Date2StringSerialize.class)
     private Date createTime;
 
     /** 更新时间 */
+    @JsonSerialize(using = Date2StringSerialize.class)
     private Date updateTime;
 }

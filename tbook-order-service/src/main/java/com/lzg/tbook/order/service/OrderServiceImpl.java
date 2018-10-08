@@ -6,9 +6,10 @@ import com.lzg.common.enums.OrderStatusEnum;
 import com.lzg.common.enums.OrdersTypeEnum;
 import com.lzg.common.enums.ResultEnum;
 import com.lzg.common.exception.TBookException;
+import com.lzg.common.redis.RedisUtil;
 import com.lzg.common.utlis.KeyUtil;
+import com.lzg.manager.dto.OrdersDTO;
 import com.lzg.manager.entity.Content;
-import com.lzg.order.dto.OrdersDTO;
 import com.lzg.order.entity.Orders;
 import com.lzg.order.service.OrderService;
 import com.lzg.manager.service.ContentService;
@@ -31,7 +32,7 @@ import java.util.List;
  * 描述：
  */
 @Component
-@Service
+@Service(interfaceName="com.lzg.order.service.OrderService")
 @Slf4j
 public class OrderServiceImpl implements OrderService {
 
@@ -67,7 +68,7 @@ public class OrderServiceImpl implements OrderService {
         ordersDTO.setOrderType(OrdersTypeEnum.BUY.getCode());
 
         /** 设置订单状态 */
-        ordersDTO.setOrderStatus(OrderStatusEnum.NEW.getCode());
+        ordersDTO.setOrderStatus(OrderStatusEnum.PROCESSING.getCode());
 
         /** 扣除库存 */
         contentService.decreaseStock(findContent.getContentId());
@@ -76,6 +77,7 @@ public class OrderServiceImpl implements OrderService {
         Orders o = new Orders();
         o.setContentId(ordersDTO.getContent().getContentId());
         BeanUtils.copyProperties(ordersDTO, o);
+        log.info("order has {}",o);
         ordersDao.save(o);
 
         /** 异步创建卖家订单 */
@@ -145,7 +147,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Page<OrdersDTO> findSellList(String userId, Pageable pageable) {
         /** 查找数据库 */
-        Page<Orders> findSellPage = ordersDao.findByUserIdAndAndOrderType(userId,
+        Page<Orders> findSellPage = ordersDao.findByUserIdAndOrderTypeOrderByCreateTime(userId,
                 OrdersTypeEnum.SELL.getCode(), pageable);
         List<Orders> sellOrderList = findSellPage.getContent();//get OrdersList
 
@@ -170,7 +172,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Page<OrdersDTO> findBuyList(String userId, Pageable pageable) {
         /** 查找数据库 */
-        Page<Orders> findBuyPage = ordersDao.findByUserIdAndAndOrderType(userId,
+        Page<Orders> findBuyPage = ordersDao.findByUserIdAndOrderTypeOrderByCreateTime(userId,
                 OrdersTypeEnum.BUY.getCode(), pageable);
         List<Orders> buyOrderList = findBuyPage.getContent();//get OrdersList
 
@@ -198,7 +200,7 @@ public class OrderServiceImpl implements OrderService {
         OrdersDTO ordersDTO = findOrder(ordersId);
 
         /** 判断订单状态 */
-        if (!ordersDTO.getOrderStatus().equals(OrderStatusEnum.NEW.getCode())) {
+        if (!ordersDTO.getOrderStatus().equals(OrderStatusEnum.PROCESSING.getCode())) {
             throw new TBookException(ResultEnum.ORDERS_STATUS_ERROR);
         }
 
@@ -224,24 +226,24 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public OrdersDTO close(String ordersId) {
+    public OrdersDTO changeStatus(String ordersId,Integer status) {
         /** 查找订单 */
         OrdersDTO ordersDTO = findOrder(ordersId);
 
-        /** 判断订单状态 */
-        if (!ordersDTO.getOrderStatus().equals(OrderStatusEnum.NEW.getCode())) {
+        /** 判断订单状态
+        if (!ordersDTO.getOrderStatus().equals(OrderStatusEnum.PROCESSING.getCode())) {
             throw new TBookException(ResultEnum.ORDERS_STATUS_ERROR);
-        }
+        }*/
 
         /** 修改状态 */
-        ordersDTO.setOrderStatus(OrderStatusEnum.CLOSE.getCode());
+        ordersDTO.setOrderStatus(status);
 
         /** 更新 */
         update(ordersDTO);
 
-        /** 异步更新卖家订单 */
+        /** 异步更新对方订单 */
         try {
-            rabbitTemplate.convertAndSend("orders","orders.close",ordersDTO);
+            rabbitTemplate.convertAndSend("orders","orders.changestatus",ordersDTO);
         }catch (Exception e){
             e.printStackTrace();
         }

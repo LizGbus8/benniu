@@ -71,9 +71,6 @@ public class ContentServiceImpl implements ContentService {
 
     @Override
     public Content saveContent(Content content) {
-        /** 生成内容id */
-        String contentId = CONTENT + KeyUtil.getKey();
-        content.setContentId(contentId);
 
         /** 设置内容状态 */
         content.setContentStatus(ContentStatusEnum.UP.getCode());
@@ -81,7 +78,9 @@ public class ContentServiceImpl implements ContentService {
         /** 初始化点赞数 */
         content.setContentStar(0);
 
-        System.out.println(content);
+        content.setContentStatus(ContentStatusEnum.UP.getCode());
+
+        content.setContent_read(0);
 
         /** 内容入库 */
         contentDao.save(content);
@@ -93,21 +92,20 @@ public class ContentServiceImpl implements ContentService {
 
     @Override
     public Content updateContent(Content c) {
-        /** 查找内容 */
-        Content findContent = findContentById(c.getContentId());
 
         /** 内容入库 */
-        contentDao.save(findContent);
+        contentDao.save(c);
 
         /** 同步缓存 */
         try {
-            redisUtil.hdel(CONTENT,findContent.getContentId());
+            redisUtil.hdel(CONTENT,c.getContentId());
         }catch (Exception e){
             e.printStackTrace();
         }
 
         //TODO 更新索引库
-        return findContent;
+
+        return c;
     }
 
     @Override

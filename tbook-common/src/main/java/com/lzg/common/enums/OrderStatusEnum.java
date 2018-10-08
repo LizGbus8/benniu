@@ -8,9 +8,9 @@ import lombok.Getter;
  */
 @Getter
 public enum OrderStatusEnum {
-    NEW(0, "新下单"),
+    PROCESSING(0, "交易中"),
     CLOSE(1,"关闭交易"),
-    FINISH(3,"完结"),
+    FINISH(3,"完成交易"),
     COMMENT(4,"已评价")
     ;
 

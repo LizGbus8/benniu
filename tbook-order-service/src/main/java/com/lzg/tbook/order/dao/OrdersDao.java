@@ -17,6 +17,6 @@ public interface OrdersDao extends JpaRepository<Orders, String> {
      * @return
      * @Param
      */
-    Page<Orders> findByUserIdAndAndOrderType(String userId, Integer orderType, Pageable pageable);
+    Page<Orders> findByUserIdAndOrderTypeOrderByCreateTime(String userId, Integer orderType, Pageable pageable);
 
 }

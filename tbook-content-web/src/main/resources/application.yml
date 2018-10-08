@@ -2,14 +2,45 @@ server:
   port: 8084
 
 spring:
+  aop:
+    proxy-target-class: true
   dubbo:
     application:
       name: contentweb
     registry:
       address: zookeeper://120.79.254.32:2181
-    scan: com.lzg.tbook.content.web.controller
+    protocol:
+      name: dubbo
+      port: 20883
+    scan: com.lzg.tbook.content.web
   redis:
     password:
 # redis.cluster
     cluster:
       nodes: 120.79.254.32:7001,120.79.254.32:7002,120.79.254.32:7003,120.79.254.32:7004,120.79.254.32:7005,120.79.254.32:7006
+  rabbitmq:
+      host: 120.79.254.32
+      username: guest
+      password: guest
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.79.254.32:3306/benniu?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    filters:
+       commons-log.connection-logger-name: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500

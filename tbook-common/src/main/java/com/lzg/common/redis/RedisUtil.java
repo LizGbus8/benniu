@@ -593,6 +593,24 @@ public class RedisUtil {
         }
     }
 
+    public Set<Object> zRank(String key, Long start, Long end) {
+        try {
+            return redisTemplate.opsForZSet().reverseRange(key,start,end);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public Long hincrement(String key, Object item, Long de) {
+        try {
+            return redisTemplate.opsForHash().increment(key,item,de);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
 
     public RedisTemplate getTemplate() {
         try {

@@ -6,6 +6,8 @@ import com.lzg.manager.entity.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 /**
  * 作者：LizG on 2018/8/19 23:36
  * 描述：
@@ -43,8 +45,15 @@ public class CategoryServiceImpl implements CategoryService {
         return update(category);
     }
 
+
+
     @Override
     public Category update(Category category) {
         return categoryDao.save(category);
+    }
+
+    @Override
+    public List<Category> findAll() {
+        return categoryDao.findAll();
     }
 }

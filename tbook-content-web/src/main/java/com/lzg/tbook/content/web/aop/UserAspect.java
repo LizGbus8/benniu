@@ -25,7 +25,7 @@ public class UserAspect {
     @Autowired
     RedisUtil redisUtil;
 
-    @Pointcut("execution(public * com.lzg.tbook.content.web.controller.Content*.*(..))")
+    @Pointcut("execution(public * com.lzg.tbook.content.web.controller.*Controller.*(..))")
     public void verify() {
     }
 
@@ -44,7 +44,6 @@ public class UserAspect {
             log.warn("【登录校验】Redis中查不到token");
             throw new TBookException(ResultEnum.VERIFY_ERROR);
         }
-        log.info("user is {}", user);
     }
 
 }

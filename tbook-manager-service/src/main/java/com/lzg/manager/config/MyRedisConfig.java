@@ -19,7 +19,6 @@ import java.util.Set;
  * 作者：LizG on 2018/8/2 15:46
  * 描述：springboot缓存注解整合redis
  */
-@Configuration
 public class MyRedisConfig {
 
     @Bean

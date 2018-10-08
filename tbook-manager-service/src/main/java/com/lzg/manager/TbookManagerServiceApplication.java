@@ -14,7 +14,7 @@ public class TbookManagerServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(TbookManagerServiceApplication.class);
-        springApplication.addListeners(new ApplicationStartup());
+//        springApplication.addListeners(new ApplicationStartup());
         springApplication.run(args);
     }
 

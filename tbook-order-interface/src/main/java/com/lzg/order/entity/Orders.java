@@ -27,23 +27,20 @@ public class Orders {
     /** 订单类型 */
     private Integer orderType;
 
-    /** 订单状态 新订单-0 已拍下-1 已付款-2 完结-3 待评价-4*/
+    /** 订单状态 交易中-0 关闭交易-1 完成交易-3 已评价-4*/
     private Integer orderStatus;
+
+    /** 买家id */
+    private String tradersId;
+
+    /** 买家昵称*/
+    private String tradersNickName;
+
+    /** 联系方式*/
+    private String tradersContact;
 
     /** 买家评价 */
     private String commented;
-
-    /** 买家id */
-    private String buyerId;
-
-    /** 买家昵称*/
-    private String buyerNickName;
-
-    /** 买家地址 */
-    private String buyerAddress;
-
-    /** 联系方式 */
-    private String buyerPhone;
 
     /** 商品id */
     private String contentId;
@@ -53,9 +50,6 @@ public class Orders {
 
     /** 订单更新时间*/
     private Date updateTime;
-
-    /** 付款时间 */
-    private Date paidTime;
 
     /** 完结时间 */
     private Date finishTime;

@@ -1,11 +1,23 @@
 package com.lzg.manager.service;
 
+import com.lzg.common.VO.ProductVO;
+import com.lzg.common.enums.ResultEnum;
+import com.lzg.common.exception.TBookException;
 import com.lzg.common.redis.RedisLock;
 import com.lzg.common.utlis.KeyUtil;
+import com.lzg.manager.dao.ContentDao;
+import com.lzg.manager.dto.ProductDTO;
+import com.lzg.manager.entity.Content;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,46 +27,42 @@ import java.util.Map;
 @Service
 public class ProductService {
 
-    //@Autowired
-    private RedisLock redisLock;
-    //商品
-    static Map<String,Integer> product = new HashMap<>();
+    @Autowired
+    private ContentDao contentDao;
 
-    //库存
-    static Map<String,Integer> stock = new HashMap<>();
+    public List<ProductDTO> getProductsByCgr(Integer categoryId,Pageable pageable){
+        if (StringUtils.isEmpty(categoryId)){
+            throw new TBookException(ResultEnum.CATEGORY_NOT_EXIST);
+        }
+        Page<Content> contentPage = contentDao.findByCategoryIdOrderByCreateTime(categoryId, pageable);
 
-    //用户购买
-    static Map<String,String> order = new HashMap<>();
+        List<ProductDTO> list = new ArrayList<>();
 
-    static {
-        product.put("5566",10000);
-        stock.put("5566",10000);
+        for (Content c : contentPage.getContent()){
+            ProductDTO productDTO = new ProductDTO();
+            productDTO.setProductId(c.getContentId());
+            BeanUtils.copyProperties(c,productDTO);
+            list.add(productDTO);
+        }
+
+        return list;
     }
 
-    public String queryMap(String productId){
-        return "商品总数有：" + product.get(productId) + "库存还剩：" + stock.get(productId) +"--"+ order.size() + "人购买";
-    }
+    public List<ProductDTO> getProductsByUserId(String userId,Pageable pageable){
+        if (StringUtils.isEmpty(userId)){
+            throw new TBookException(ResultEnum.NOT_HAS_LOGIN);
+        }
+        Page<Content> contentPage = contentDao.findByUserIdOrderByCreateTime(userId,pageable);
 
-    public void buy(String productId){
-        String identity = redisLock.tryGetDistributedLock(productId);
-        if (identity == null){
-            System.out.println("访问人太多了");
-            return;
+        List<ProductDTO> list = new ArrayList<>();
+
+        for (Content c : contentPage.getContent()){
+            ProductDTO productDTO = new ProductDTO();
+            productDTO.setProductId(c.getContentId());
+            BeanUtils.copyProperties(c,productDTO);
+            list.add(productDTO);
         }
-        Integer pNum = stock.get(productId);
-        if(pNum == 0){
-            System.out.println("没有这个商品");
-        }else {
-            order.put(KeyUtil.getKey(),productId);
-            pNum-=1;
-            stock.put(productId,pNum);
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        redisLock.releaseLock(productId,identity);
-        System.out.println("释放锁");
+
+        return list;
     }
 }
