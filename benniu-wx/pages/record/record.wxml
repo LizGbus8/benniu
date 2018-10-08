@@ -1,0 +1,28 @@
+<view class="container cart-container">
+    <view class="weui-panel__hd">笨牛记录</view>
+    <view class="person-list">
+      <view class="list-item" bindtap='onMyPublishTap'>
+        <image class="item-image" src="../../imgs/icon/my_publish.png"></image>
+        <text class="item-text">我发布的</text>
+      </view>
+      <view class="person-line"></view>
+      <view class="list-item" bindtap='onMySallTap'>
+        <image class="item-image" src="../../imgs/icon/my_sall.png"></image>
+        <text class="item-text">我卖出的</text>
+      </view>
+      <view class="person-line"></view>
+      <view class="list-item" bindtap='onMyBuyTap'>
+        <image class="item-image" src="../../imgs/icon/my_buy.png"></image>
+        <text class="item-text">我买入的</text>
+      </view>
+      <view class="person-line"></view>
+      <view class="list-item" bindtap='onMyLikeTap'>
+        <image class="item-image" src="../../imgs/icon/my_like.png"></image>
+        <text class="item-text">我喜欢的</text>
+      </view>
+      <view class="person-line"></view>
+    </view>
+    <loading hidden="{{loadingHidden}}">
+      加载中...
+    </loading>
+  </view>

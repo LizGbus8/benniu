@@ -19,7 +19,10 @@ class Publish extends Base {
       },
       method: "POST",
       success: function (res) {
-        console.log(res.data)
+        console.log(res.data);
+        wx.reLaunch({
+          url: '/pages/tip/success'
+        });
       }
     })
 };

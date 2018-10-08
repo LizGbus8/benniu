@@ -12,12 +12,12 @@ class Home extends Base{
 
     /*首页部分商品*/
     getProductorData(callback){
-        var token = wx.getStorageSync("token");
         var param={
-            url: 'content/hot',
-            data: { token: token},
+            url: 'http://127.0.0.1:8084/content/hot',
             type: 'get',
+            setUpUrl: false,
             sCallback:function(res){
+              console.log(res.data)
                 callback && callback(res.data);
             }
         };

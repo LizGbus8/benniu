@@ -1,68 +1,109 @@
 <view class="container detail-container" hidden="{{!loadingHidden}}">
+  <form bindsubmit="formSubmit" report-submit="true">
     <view class="detail-header-box">
-        <view class="fixed-btns-box" bindtap="onCartTap">
-            <view class="fiexd-cart {{isShake?'animate':''}}">
-                <image src="../../imgs/icon/cart@top.png"></image>
-                <view wx:if="{{cartTotalCounts>0}}">{{cartTotalCounts}}</view>
-            </view>
+      <!-- 用户信息 -->
+      <view class="weui-cell">
+        <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+          <image src="../../imgs/icon/user@default.png" style="width: 50px; height: 50px; display: block" />
         </view>
-        <view class="detail-topic-img">
-            <image src="{{product.main_img_url}}" mode="aspectFit"></image>
+        <view class="weui-cell__bd">
+          <view hidden='true'>
+            <input name='userId' value='{{product.userId}}'></input>
+            <input name='contentId' value='{{product.contentId}}'></input>
+          </view>
+          <view>{{product.username}}</view>
+          <view style="font-size: 13px;color: #888000;">
+            <view class="stock" wx:if="{{product.productStock>0}}">有货 ￥{{product.productPrice}}</view>
+            <view class="stock no" wx:else>缺货 ￥{{product.productPrice}}</view>
+          </view>
         </view>
-        <view class="cart-box">
-            <view class="product-counts">
-                <picker class="{{product.stock==0?'disabled':''}}" bindchange="bindPickerChange" value="{{index}}" range="{{countsArray}}">
-                    <!--因为picker对flex支持不好，所以加了一层view-->
-                    <view>
-                        <text class="counts-tips">数量</text>
-                        <text class="counts-data">{{productCounts}}</text>
-                        <image class="counts-icon" src="../../imgs/icon/arrow@down.png"></image>
-                    </view>
-                </picker>
-            </view>
-            <view class="middle-border"></view>
-            <view class="add-cart-btn {{product.stock==0?'disabled':''}}" bindtap="onAddingToCartTap">
-                <text>加入购物车</text>
-                <image class="cart-icon" src="../../imgs/icon/cart.png"></image>
-                <image id="small-top-img" class="small-top-img {{isFly?'animate':''}}"
-                       src="{{product.main_img_url}}" mode="aspectFill" style="{{translateStyle}}"></image>
-            </view>
-        </view>
-        <view class="basic-info-box">
-            <view class="stock" wx:if="{{product.stock>0}}">有货</view>
-            <view class="stock no" wx:else>缺货</view>
-            <view class="name">{{product.name}}</view>
-            <view class="price">￥{{product.price}}</view>
-        </view>
+      </view>
+      <!-- title & desc -->
+      <view class="page__hd">
+        <view class="page__title">{{product.productTitle}}</view>
+        <view class="page__desc">{{product.productDesc}}</view>
+      </view>
+
+      <!-- 图片 -->
+      <view class="detail-topic-img">
+        <image src="{{product.productImg1}}" mode="aspectFit" wx:if="{{product.productImg1!=null}}"></image>
+      </view>
+      <view class="detail-topic-img">
+        <image src="{{product.productImg2}}" mode="aspectFit" wx:if="{{product.productImg2!=null}}"></image>
+      </view>
+      <view class="detail-topic-img">
+        <image src="{{product.productImg3}}" mode="aspectFit" wx:if="{{product.productImg3!=null}}"></image>
+      </view>
+
     </view>
-    <view class="detail-bottom-box">
-        <view class="tabs-box">
-            <block wx:for="{{['商品详情' ,'产品参数','售后保障']}}">
-                <view class="tabs-item {{currentTabsIndex==index?'selected':''}}" bindtap="onTabsItemTap" data-index="{{index}}">
-                    {{item}}
-                </view>
-            </block>
+    <!-- 操作 -->
+    <view class="detail-bottom-box" wx:if="{{code==0}}">
+      <view class="weui-flex">
+        <view>
+          <view class="placeholder">
+            <view style="font-size: 15px;color: #888888;">
+              <text class='iconfont icon-browse_fill' style='font-size: 40rpx'></text>{{product.content_read}}
+            </view>
+          </view>
         </view>
-        <view class="product-detail-box">
-            <view class="product-detail-imgs" hidden="{{currentTabsIndex!=0}}">
-                <block wx:for="{{product.imgs}}">
-                    <image src="{{item.img_url.url}}" mode="aspectFill"></image>
-                </block>
+
+
+        <view>
+          <view class="placeholder">
+            <view style="font-size: 15px;color: #888888;">
+              <text class='iconfont icon-like' style='font-size: 40rpx'></text>{{product.contentStar}}
             </view>
-            <view class="product-detail-properties" hidden="{{currentTabsIndex!=1}}">
-                <block wx:for="{{product.properties}}">
-                    <view class="properties-item">
-                        <view class="properties-name">{{item.name}}</view>
-                        <view class="properties-detail">{{item.detail}}</view>
-                    </view>
-                </block>
-            </view>
-            <view class="product-detail-protect" hidden="{{currentTabsIndex!=2}}">
-                <view>七天无理由免费退货</view>
-            </view>
+          </view>
         </view>
+
+        <view>
+          <view class="placeholder">
+            <text class="iconfont icon-praise {{isLike?'fill':''}}" style='font-size: 40rpx;' bindtap="onLikeTap" data-like='{{isLike}}'></text>
+          </view>
+        </view>
+
+        <view class="weui-flex__item">
+          <view class="placeholder">
+            <button class="weui-btn" formType="submit" type="primary">
+              <view style="font-size: 13px;">我想要</view>
+            </button>
+          </view>
+        </view>
+
+      </view>
     </view>
+
+    <view class="detail-bottom-box" wx:if="{{code==1}}">
+      <view class="weui-flex">
+        <view>
+          <view class="placeholder">
+            <view style="font-size: 15px;color: #888888;">
+              <text class='iconfont icon-browse_fill' style='font-size: 40rpx'></text>{{product.content_read}}
+            </view>
+          </view>
+        </view>
+
+
+        <view>
+          <view class="placeholder">
+            <view style="font-size: 15px;color: #888888;">
+              <text class='iconfont icon-like' style='font-size: 40rpx'></text>{{product.content_read}}
+            </view>
+          </view>
+        </view>
+
+      <view class="weui-flex__item">
+        <view class="placeholder">
+          <button class="weui-btn" type="primary">
+            <view style="font-size: 13px;">我要下架</view>
+          </button>
+        </view>
+      </view>
+        
+      </view>
+    </view>
+  </form>
 </view>
 <loading hidden="{{loadingHidden}}">
-    加载中...
+  加载中...
 </loading>

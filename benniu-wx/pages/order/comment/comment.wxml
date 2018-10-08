@@ -1,0 +1,44 @@
+<!--pages/order/comment/comment.wxml-->
+<view class="page">
+  <view class="page__bd">
+
+    <!-- 评价表单 -->
+    <form bindsubmit="formSubmit">
+      <!-- 商品信息 -->
+      <view>
+        <view class="page__title">{{title}}</view>
+      </view>
+      <view class="weui-cells__title">评价内容</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" name="content" style="height: 3.3em" />
+            <view class="weui-textarea-counter">0/200</view>
+          </view>
+        </view>
+      </view>
+      <!-- 好评&差评 -->
+      <view class="page-section page-section-gap">
+        <radio-group name="type">
+          <label>
+            <radio value="好评" />好评</label>
+          <label>
+            <radio value="差评" />差评</label>
+        </radio-group>
+      </view>
+      <!-- 评价发布 -->
+      <view class="weui-btn-area">
+        <button class="weui-btn" formType="submit" type="primary">确定</button>
+      </view>
+    </form>
+  </view>
+</view>
+<view class="weui-msg__extra-area ">
+  <view class="weui-footer ">
+    <view class="weui-footer__links ">
+      <navigator url=" " class="weui-footer__link ">笨牛书屋</navigator>
+    </view>
+    <view class="weui-footer__text ">Copyright © 2008-2016 benniu.io</view>
+
+  </view>
+</view>

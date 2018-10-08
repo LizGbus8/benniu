@@ -1,127 +1,158 @@
 // var productObj = require('product-model.js');
 
-import {Product} from 'product-model.js';
-import {Cart} from '../cart/cart-model.js';
+import {
+  Product
+} from 'product-model.js';
 
-var product=new Product();  //实例化 商品详情 对象
-var cart=new Cart();
+var product = new Product(); //实例化 商品详情 对象
 Page({
-    data: {
-        loadingHidden:false,
-        hiddenSmallImg:true,
-        countsArray:[1,2,3,4,5,6,7,8,9,10],
-        productCounts:1,
-        currentTabsIndex:0,
-        cartTotalCounts:0,
-    },
-    onLoad: function (option) {
-        var id = option.id;
-        this.data.id=id;
-        this._loadData();
-    },
+  data: {
+    loadingHidden: false,
+    hiddenSmallImg: true,
+    countsArray: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    productCounts: 1,
+    currentTabsIndex: 0,
+    cartTotalCounts: 0,
+    isLike: false,
+    code: 0 //0 普通查看（操作我想要） 1 我的发布（我想下架）
+  },
+  onLoad: function(option) {
+    var id = option.id;
+    this.data.id = id;
+    this.setData({
+      code: option.code
+    })
+    this._loadData();
+    this._increaseRead();
+  },
 
-    /*加载所有数据*/
-    _loadData:function(callback){
-        var that = this;
-        product.getDetailInfo(this.data.id,(data)=>{
-            that.setData({
-                cartTotalCounts:cart.getCartTotalCounts().counts1,
-                product:data,
-                loadingHidden:true
-            });
-            callback&& callback();
-        });
-    },
+  /*加载所有数据*/
+  _loadData: function(callback) {
+    var that = this;
+    product.getDetailInfo(this.data.id, (data) => {
+      console.log(data);
+      that.setData({
+        product: data,
+        loadingHidden: true
+      });
+      callback && callback();
+    });
+  },
 
-    //选择购买数目
-    bindPickerChange: function(e) {
-        this.setData({
-            productCounts: this.data.countsArray[e.detail.value],
-        })
-    },
+  /* 增加浏览数 */
+  _increaseRead: function(callback) {
+    var that = this;
+    product.increaseRead(this.data.id, (data) => {
+      console.log("读了一次");
+      //设置已读
+      callback && callback();
+    });
+  },
 
-    //切换详情面板
-    onTabsItemTap:function(event){
-        var index=product.getDataSet(event,'index');
-        this.setData({
-            currentTabsIndex:index
-        });
-    },
 
-    /*添加到购物车*/
-    onAddingToCartTap:function(events){
-        //防止快速点击
-        if(this.data.isFly){
-            return;
-        }
-        this._flyToCartEffect(events);
-        this.addToCart();
-    },
-
-    /*将商品数据添加到内存中*/
-    addToCart:function(){
-        var tempObj={},keys=['id','name','main_img_url','price'];
-        for(var key in this.data.product){
-            if(keys.indexOf(key)>=0){
-                tempObj[key]=this.data.product[key];
+  // 提交表单
+  formSubmit: function(e) {
+    var that = this;
+    var formData = e.detail.value;
+    console.log(e);
+    console.log("formId: " + e.detail.formId)
+    wx.request({
+      url: 'http://127.0.0.1:8081/order',
+      data: formData,
+      header: {
+        'Content-Type': 'application/json',
+        'token': wx.getStorageSync('token')
+      },
+      method: "POST",
+      success: function(res) {
+        console.log(res.data);
+        var data = res.data.data;
+        console.log(data);
+        console.log(e.detail.formId)
+        // 推送消息
+        // 买家
+        wx.request({
+          url: 'https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=' + wx.getStorageSync('token'),
+          data: {
+            'touser': data.userId,
+            'template_id': 'nvWJ0GY4W9oFO3Zw3nkbnrH33ROIH6JHERTgqz_4rKI',
+            'page': '/pages/home/home',
+            'form_id': e.detail.formId,
+            'data': {
+              "keyword1": {
+                "value": data.productTitle,
+                "color": "#173177"
+              },
+              "keyword2": {
+                "value": data.tradersNickName,
+                "color": "#173177"
+              },
+              "keyword3": {
+                "value": data.tradersContact,
+                "color": "#173177"
+              },
+              "keyword4": {
+                "value": data.productPrice,
+                "color": "#173177"
+              },
+              "keyword5": {
+                "value": data.createTime,
+                "color": "#173177"
+              },
             }
-        }
-
-        cart.add(tempObj,this.data.productCounts);
-    },
-
-    /*加入购物车动效*/
-    _flyToCartEffect:function(events){
-        //获得当前点击的位置，距离可视区域左上角
-        var touches=events.touches[0];
-        var diff={
-                x:'25px',
-                y:25-touches.clientY+'px'
-            },
-            style='display: block;-webkit-transform:translate('+diff.x+','+diff.y+') rotate(350deg) scale(0)';  //移动距离
-        this.setData({
-            isFly:true,
-            translateStyle:style
-        });
-        var that=this;
-        setTimeout(()=>{
-            that.setData({
-                isFly:false,
-                translateStyle:'-webkit-transform: none;',  //恢复到最初状态
-                isShake:true,
+          },
+          header: {
+            'Content-Type': 'application/json',
+            'token': wx.getStorageSync('token')
+          },
+          method: "POST",
+          success: function(res) {
+            console.log(res);
+            wx.reLaunch({
+              url: '/pages/tip/success'
             });
-            setTimeout(()=>{
-                var counts=that.data.cartTotalCounts+that.data.productCounts;
-                that.setData({
-                    isShake:false,
-                    cartTotalCounts:counts
-                });
-            },200);
-        },1000);
-    },
-
-    /*跳转到购物车*/
-    onCartTap:function(){
-        wx.switchTab({
-            url: '/pages/cart/cart'
+          }
         });
-    },
+      }
+    })
+  },
 
-    /*下拉刷新页面*/
-    onPullDownRefresh: function(){
-        this._loadData(()=>{
-            wx.stopPullDownRefresh()
-        });
-    },
+  //选择购买数目
+  bindPickerChange: function(e) {
+    this.setData({
+      productCounts: this.data.countsArray[e.detail.value],
+    })
+  },
 
-    //分享效果
-    onShareAppMessage: function () {
-        return {
-            title: '零食商贩 Pretty Vendor',
-            path: 'pages/product/product?id=' + this.data.id
-        }
+  //切换详情面板
+  onTabsItemTap: function(event) {
+    var index = product.getDataSet(event, 'index');
+    this.setData({
+      currentTabsIndex: index
+    });
+  },
+
+  //点赞
+  onLikeTap: function(event) {
+    console.log(event);
+    this.setData({
+      isLike: true
+    });
+  },
+
+  /*下拉刷新页面*/
+  onPullDownRefresh: function() {
+    this._loadData(() => {
+      wx.stopPullDownRefresh()
+    });
+  },
+
+  //分享效果
+  onShareAppMessage: function() {
+    return {
+      title: '零食商贩 Pretty Vendor',
+      path: 'pages/product/product?id=' + this.data.id
     }
+  }
 
 })
-
-

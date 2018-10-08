@@ -1,0 +1,13 @@
+<!--pages/item/item.wxml-->
+<import src="../tpls/category/category-tpl.wxml" />
+<view class="container category-container">
+  <view class="category-box">
+      <template is="mybuydisplay" data="{{buyorderlist:buyorderlist}}"/>
+      <template is="mysalldisplay" data="{{sallorderlist:sallorderlist}}"/>
+      <template is="mypublishdisplay" data="{{contentlist:contentlist}}" />
+  </view>
+
+</view>
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>

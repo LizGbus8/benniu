@@ -9,7 +9,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    files: [],
+    files: [], 
+    images: [],
     categorys: ["计算机", "英文", "教材", "考研", "考公", "管理", "电子商务"],
     categorysIndex: 0,
 
@@ -107,6 +108,7 @@ Page({
   chooseImage: function(e) {
     var that = this;
     wx.chooseImage({
+      count: 1,
       sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
       sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
       success: function(res) {
@@ -114,7 +116,32 @@ Page({
         that.setData({
           files: that.data.files.concat(res.tempFilePaths)
         });
+        var tempFilePaths = res.tempFilePaths; 
+
+        wx.uploadFile({
+          url: 'http://127.0.0.1:8084/content/img',
+          filePath: tempFilePaths[0],
+          name: 'img',
+          header: {
+            "Content-Type": "multipart/form-data",
+            'accept': 'application/json',
+            'token': wx.getStorageSync('token')    //s若有token，此处换上你的token，没有的话省略          
+          },
+          success: function (res) {
+            var data = res.data;
+            that.setData({
+              images: that.data.images.concat(data)
+            });
+            console.log(that.data.images);
+          },
+          fail: function (res) {
+            console.log('fail');
+          }
+        })
+        //
+        //
         console.log(that.data.files);
+        
       }
     })
   },
@@ -133,9 +160,9 @@ Page({
       categoryName: formData.categoryName,
       productTitle: formData.productTitle,
       productDesc: formData.productDesc,
-      productImg1: that.data.files[0],
-      productImg2: that.data.files[1],
-      productImg3: that.data.files[2],
+      productImg1: that.data.images[0],
+      productImg2: that.data.images[1],
+      productImg3: that.data.images[2],
       productPrice: formData.productPrice,
       productStock: formData.productStock,
       contactType: formData.contactType,

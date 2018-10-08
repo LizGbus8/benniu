@@ -8,16 +8,15 @@ import {
 
 class Token {
   constructor() {
-    this.verifyUrl = Config.restUrl + 'token/verify';
-    this.tokenUrl = Config.restUrl + 'token/user';
+    this.verifyUrl = Config.restUrl + 'token/verify';//verify
   }
 
   verify() {
     var token = wx.getStorageSync('token');
     if (!token) {
-      this.getTokenFromServer();
+      this.getTokenFromServer();//wxLogin
     } else {
-      this._veirfyFromServer(token);
+      this._veirfyFromServer(token);//verify
     }
   }
 
@@ -46,7 +45,7 @@ class Token {
     wx.login({
       success: function(res) {
         wx.request({
-          url: that.tokenUrl,
+          url: "http://127.0.0.1:8082/token/user",//wxLogin
           method: 'POST',
           data: {
             code: res.code

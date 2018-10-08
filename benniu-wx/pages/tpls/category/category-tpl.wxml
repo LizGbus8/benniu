@@ -1,18 +1,162 @@
-<template name="categorydetail">
-  <view class="category-detail-box" hidden="{{!categoryInfo}}">
-    <view class="category-header">
-      <image src="{{categoryInfo.topImgUrl}}" mode="aspectFill"></image>
-    </view>
-    <view class="category-title">
-      <text>{{categoryInfo.title}}</text>
-    </view>
+<template name="categorydisplay">
+  <view class="products-box" hidden="{{!contentlist}}">
     <view class="category-main">
-      <block wx:for="{{categoryInfo.procucts}}">
-        <view class="category-goods-items {{index%3==1?'middle':''}}" data-id="{{item.id}}" bindtap="onProductsItemTap">
-          <image src="{{item.main_img_url}}" mode="aspectFill"></image>
-          <view>{{item.name}}</view>
+      <block wx:for="{{contentlist}}">
+        <!-- <view class="weui-cells weui-cells_after-title"> -->
+        <view class="products-item" bindtap="onProductsItemTap" data-id="{{item.productId}}">
+          <view class="weui-cell" style='border-bottom: 1rpx dotted #d9d9d9;'>
+            <!-- 商品图片 -->
+            <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+              <image src="../../imgs/product/banner-1a.png" style="width: 150px; height: 100px; display: block" />
+            </view>
+            <!-- 商品信息 -->
+            <view class="weui-cell__bd">
+              <view>{{item.productTitle}}</view>
+              <view style=font-size: 13px;color: #f8d820; ">￥{{item.productPrice}}</view>
+              <view style="font-size: 15px;color: #888888; display:-webkit-box; overflow:hidden; -webkit-line-clamp:1; -webkit-box-orient:vertical;">{{item.productDesc}}</view>
+            </view>
+          </view>
+        </view>
+        <!-- </view> -->
+      </block>
+    </view>
+  </view>
+</template>
+
+<!-- code 取消交易 1 查看评价 2 完成交易 3 查看评价 4  评价5-->
+<template name="mybuydisplay">
+  <view class="products-box">
+    <view class="category-main ">
+      <block wx:for="{{buyorderlist}}">
+      <view class='order'>
+        <view style='margin: 2px;color: #8a8a8a;margin-left: 15px;'>订单号:{{item.orderId}}<text class='iconfont icon-unfold' style='font-size: 40rpx;'></text></view></view>
+        <view class="products-item " bindtap="onProductsItemTap" data-id="{{item.orderId}} ">
+            <view class="weui-form-preview">
+              <view class="weui-form-preview__hd ">
+                  <view class="weui-form-preview__label ">交易金额</view>
+                  <view class="weui-form-preview__value_in-hd " style='color: #fbcb33'>¥{{item.content.productPrice}}</view>
+              </view>
+              <view class="weui-form-preview__bd ">
+                  <view class="weui-form-preview__item ">
+                      <view class="weui-form-preview__label ">商品</view>
+                      <view class="weui-form-preview__value ">{{item.content.productTitle}}</view>
+                  </view>
+                  <view class="weui-form-preview__item ">
+                      <view class="weui-form-preview__label ">买家</view>
+                      <view class="weui-form-preview__value ">{{item.tradersNickName}}</view>
+                  </view>
+                  <view class="weui-form-preview__item ">
+                      <view class="weui-form-preview__label ">联系方式</view>
+                      <view class="weui-form-preview__value ">{{item.tradersContact}}</view>
+                  </view>
+                  <view class="weui-form-preview__item ">
+                      <view class="weui-form-preview__label ">交易状态</view>
+                      <view style="font-size: 13px;color: #888000; ">
+                          <view class="stock" wx:if="{{item.orderStatus==0}}">处理中</view>
+                          <view class="stock" wx:if="{{item.orderStatus==1}}">交易关闭</view>
+                          <view class="stock no" wx:if="{{item.orderStatus==3}}">完成交易</view>
+                          <view class="stock no" wx:if="{{item.orderStatus==4}}">已评价</view>
+                      </view> 
+                  </view> 
+
+                  <view class="weui-form-preview__ft " wx:if="{{item.orderStatus==0}}">
+                      <navigator class="weui-form-preview__btn weui-form-preview__btn_default " hover-class="weui-form-preview__btn_active " style='color:#d81e06' url="/pages/order/order?id={{item.orderId}}&code=1" redirect="true">取消交易</navigator>
+                      <navigator class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" url="/pages/order/order?id={{item.orderId}}&code=3" redirect="true">完成交易</navigator>
+                  </view>
+
+                   <view class="weui-form-preview__ft " wx:if="{{item.orderStatus==3}}">
+                      <navigator class="weui-form-preview__btn weui-form-preview__btn_default " hover-class="weui-form-preview__btn_active "
+                      url="/pages/order/comment/comment?id={{item.orderId}}&productTitle={{item.content.productTitle}}" redirect="true">评价</navigator>
+                  </view>
+              
+            </view>  
+          </view>
         </view>
       </block>
     </view>
   </view>
 </template>
+
+<!-- code 取消交易 1 查看评价 2 完成交易 3 评价 4 -->
+<template name="mysalldisplay">
+  <view class="products-box">
+    <view class="category-main ">
+      <block wx:for="{{sallorderlist}}">
+      <view class='order'>
+        <view style='margin: 2px;color: #8a8a8a;margin-left: 15px;'>订单号:{{item.orderId}}<text class='iconfont icon-unfold' style='font-size: 40rpx;'></text></view></view>
+        <view class="products-item " bindtap="onProductsItemTap" data-id="{{item.orderId}} ">
+            <view class="weui-form-preview">
+              <view class="weui-form-preview__hd ">
+                  <view class="weui-form-preview__label ">交易金额</view>
+                  <view class="weui-form-preview__value_in-hd " style='color: #fbcb33'>¥{{item.content.productPrice}}</view>
+              </view>
+              <view class="weui-form-preview__bd ">
+                  <view class="weui-form-preview__item ">
+                      <view class="weui-form-preview__label ">商品</view>
+                      <view class="weui-form-preview__value ">{{item.content.productTitle}}</view>
+                  </view>
+                  <view class="weui-form-preview__item ">
+                      <view class="weui-form-preview__label ">买家</view>
+                      <view class="weui-form-preview__value ">{{item.tradersNickName}}</view>
+                  </view>
+                  <view class="weui-form-preview__item ">
+                      <view class="weui-form-preview__label ">联系方式</view>
+                      <view class="weui-form-preview__value ">{{item.tradersContact}}</view>
+                  </view>
+                  <view class="weui-form-preview__item ">
+                      <view class="weui-form-preview__label ">交易状态</view>
+                      <view style="font-size: 13px;color: #888000; ">
+                          <view class="stock" wx:if="{{item.orderStatus==0}}">处理中</view>
+                          <view class="stock no" wx:if="{{item.orderStatus==1}}">交易关闭</view>
+                          <view class="stock no" wx:if="{{item.orderStatus==3}}">交易完成</view>
+                          <view class="stock no" wx:if="{{item.orderStatus==4}}">买家已评价</view>
+                      </view> 
+                  </view> 
+
+                  
+                  <view class="weui-form-preview__ft " wx:if="{{item.orderStatus==0}}">
+                      <navigator class="weui-form-preview__btn weui-form-preview__btn_default " hover-class="weui-form-preview__btn_active " style='color:#d81e06' url="/pages/order/order?id={{item.orderId}}&code=1" redirect="true">取消交易</navigator>
+                  </view>
+
+                   <view class="weui-form-preview__ft " wx:if="{{item.orderStatus==4}}">
+                      <navigator class="weui-form-preview__btn weui-form-preview__btn_default " hover-class="weui-form-preview__btn_active " url="/pages/order/order?id={{item.orderId}}&code=4" redirect="true">查看评价</navigator>
+                      <!-- 评价展示 -->
+                     
+                  </view>
+              
+            </view>  
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</template>
+
+<template name="mypublishdisplay">
+  <view class="products-box" hidden="{{!contentlist}}">
+    <view class="category-main">
+      <block wx:for="{{contentlist}}">
+        <!-- <view class="weui-cells weui-cells_after-title"> -->
+        <view class="products-item" bindtap="onProductsItemTap" data-id="{{item.productId}}">
+          <view class="weui-cell">
+            <!-- 商品图片 -->
+            <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+              <image src="../../imgs/product/banner-1a.png" style="width: 150px; height: 100px; display: block" />
+            </view>
+            <!-- 商品信息 -->
+            <view class="weui-cell__bd">
+              <view>{{item.productTitle}}</view>
+              <view style="font-size: 13px;color: #888000;">
+                <view class="stock" wx:if="{{item.contentStatus==0}}">发布中 ￥{{item.productPrice}}</view>
+                <view class="stock no" wx:else>下架 ￥{{item.productPrice}}</view>
+              </view>
+              <view style=font-size: 12px;color: #888888; ">发布时间：{{item.createTime}}</view>
+          </view>
+        </view>
+        </view>
+        <!-- </view> -->
+      </block>
+    </view>
+  </view>
+</template>
+

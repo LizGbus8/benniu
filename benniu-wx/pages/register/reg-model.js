@@ -8,12 +8,12 @@ class Reg extends Base {
   }
 
   //判断是否注册
-  isRegsited(token, cb) {
+  isRegsited(cb) {
     var that = this;
     var allParams = {
       url: 'token/user',
       data: {
-        token: token
+        token: wx.getStorageSync('token')
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded',
@@ -24,6 +24,7 @@ class Reg extends Base {
         if (data.code == 775){
           typeof cb == "function" && cb(false);
         }else if(data.code == 0){
+          console.log("data.code == 0");
           typeof cb == "function" && cb(true);
         }
       }

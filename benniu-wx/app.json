@@ -3,13 +3,14 @@
     "pages/register/reg",
     "pages/home/home",
     "pages/category/category",
-    "pages/cart/cart",
-    "pages/my/my",
-    "pages/theme/theme",
+    "pages/publish/publish",
     "pages/product/product",
-    "pages/order/order",
-    "pages/pay-result/pay-result",
-    "pages/publish/publish"
+    "pages/tip/success",
+    "pages/record/record",
+    "pages/my/my",
+    "pages/item/item",
+    "pages/order/comment/comment",
+    "pages/order/order"
   ],
   "window": {
     "navigationBarTitleText": "",
@@ -17,7 +18,8 @@
     "navigationBarBackgroundColor": "#AB956D",
     "backgroundColor": "#FFFFFF",
     "backgroundTextStyle": "dark",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 30
   },
   "tabBar": {
     "list": [
@@ -36,14 +38,14 @@
       {
         "pagePath": "pages/publish/publish",
         "iconPath": "imgs/toolbar/icon_nav_special.png",
-        "selectedIconPath": "imgs/toolbar/icon_nav_special.png",
+        "selectedIconPath": "imgs/toolbar/icon_nav_special@selected.png",
         "text": "发布"
       },
       {
-        "pagePath": "pages/cart/cart",
+        "pagePath": "pages/record/record",
         "iconPath": "imgs/toolbar/cart.png",
         "selectedIconPath": "imgs/toolbar/cart@selected.png",
-        "text": "购物车"
+        "text": "笨牛记录"
       },
       {
         "pagePath": "pages/my/my",

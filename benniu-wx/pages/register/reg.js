@@ -19,32 +19,32 @@ Page({
     ],
     checkboxItems: [{
         name: '计算机',
-        value: '0',
+        value: '1',
         checked: true
       },
       {
         name: '英文',
-        value: '1'
-      },
-      {
-        name: '教材',
         value: '2'
       },
       {
-        name: '考研',
-        value: '3'
-      },
-      {
-        name: '考公',
+        name: '教材',
         value: '4'
       },
       {
+        name: '考研',
+        value: '8'
+      },
+      {
+        name: '考公',
+        value: '16'
+      },
+      {
         name: '管理',
-        value: '5'
+        value: '32'
       },
       {
         name: '电子商务',
-        value: '6'
+        value: '64'
       }
     ],
     countryCodes: ["手机号", "微信", "QQ", "邮箱"],
@@ -138,20 +138,26 @@ Page({
     var formData = e.detail.value;
     console.log(e);
     wx.request({
-      url: '',
+      url: 'http://127.0.0.1:8082/token/user/register',
       data: formData,
       header: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'token':wx.getStorageSync('token')
       },
+      method:"POST",
       success: function(res) {
         console.log(res.data);
+        //跳转到home
+        wx.reLaunch({
+          url: '/pages/home/home'
+        })
       }
     })
   },
   onLoad: function(options) { // 页面初始化 options为页面跳转所带来的参数
+    console.log("reg start!")
     var that = this;
-    var token = wx.getStorageSync('token');
-    reg.isRegsited(token, (data) => {
+    reg.isRegsited((data) => {
       that.setData({
         isReg: data
       })
@@ -162,9 +168,6 @@ Page({
           url: '/pages/home/home'
         })
       }
-      wx.reLaunch({
-        url: '/pages/home/home'
-      })
     });
   },
   onReady: function() { // 页面渲染完成  
@@ -174,6 +177,10 @@ Page({
   onHide: function() { // 页面隐藏  
   },
   onUnload: function() { // 页面关闭 
-  }
+  },
+  /*下拉刷新页面*/
+  onPullDownRefresh: function () {
+    this.onLoad();
+  },
 
 });

@@ -1,134 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b03d20b-0e69-44e2-95f5-efce1c716707" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tbook-common/src/main/resources/fastdfs配置教程" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/converter/Content2ProductDTOConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/dto/ContentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/dto/HotProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/listener/ApplicationStartup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/listener/HotListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/listener/HotUpdateTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/service/ImageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/dto/CommentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/dto/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Tbcomment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/aop/UserAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/dao/CommentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/form/CommentForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/VO/WxMsgVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/dto/ResultDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/dto/WXmsg4Buyer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/dto/WXmsg4Saller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/aop/UserAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/converter/OrderDTO2ResultDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/form/WantForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/listener/WXmessageListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-sso-interface/src/main/java/com/lzg/sso/service/UserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tbook-sso-service/src/main/java/com/lzg/sso/form/UserInfoForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_1_5_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_14_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_13_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_18_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_18_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/OrderStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/OrderStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/redis/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/redis/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/FastDFSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/FastDFSClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/InterestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/InterestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/serializer/Date2LongSerialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/utlis/serializer/Date2StringSerialize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/src/main/resources/fdfs_client.conf" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/resources/fdfs_client.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/enums/OrderStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/enums/OrderStatusEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/enums/ResultEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/redis/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/redis/RedisUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/utlis/FastDFSClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/utlis/FastDFSClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/utlis/InterestUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/utlis/InterestUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/target/classes/com/lzg/common/utlis/serializer/Date2LongSerialize.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/target/classes/fdfs_client.conf" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/target/classes/fdfs_client.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-common/tbook-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/tbook-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-content-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-content-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/TbookContentWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/TbookContentWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/aop/UserAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/aop/UserAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/controller/ContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/controller/ContentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/dto/HotContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-content-web/src/main/java/com/lzg/tbook/content/web/dto/HotContentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-content-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-content-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/Content.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/School.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/entity/Content.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/entity/Content.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/entity/School.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/entity/School.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/target/classes/com/lzg/manager/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-interface/tbook-manager-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/tbook-manager-interface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/TbookManagerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/TbookManagerServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/DruidConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/DruidConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/MyRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/config/MyRedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/dao/ContentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/dao/ContentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/listener/HotListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ContentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/java/com/lzg/manager/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-manager-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-interface/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/dto/OrdersDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-manager-interface/src/main/java/com/lzg/manager/dto/OrdersDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/entity/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/entity/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-interface/src/main/java/com/lzg/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-interface/target/classes/com/lzg/order/dto/OrdersDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-interface/target/classes/com/lzg/order/entity/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-interface/target/classes/com/lzg/order/entity/Orders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-interface/target/classes/com/lzg/order/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-interface/target/classes/com/lzg/order/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-interface/tbook-order-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-interface/tbook-order-interface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/TbookOrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/TbookOrderServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/config/DruidConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-common/src/main/java/com/lzg/common/config/DruidConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/config/MyAMQPConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/config/MyRedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/dao/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/dao/OrdersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/listener/SellListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/listener/SellListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/java/com/lzg/tbook/order/service/RedisUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-order-service/src/test/java/com/lzg/tbook/order/service/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-order-service/src/test/java/com/lzg/tbook/order/service/OrderServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-search-interface/target/classes/com/lzg/tbook/search/entity/SearchItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-search-interface/target/classes/com/lzg/tbook/search/entity/SearchResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-search-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-search-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-search-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-search-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-sso-interface/src/main/java/com/lzg/sso/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-sso-interface/target/classes/com/lzg/sso/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-sso-interface/tbook-sso-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-sso-interface/tbook-sso-interface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-sso-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-sso-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-sso-service/src/main/java/com/lzg/sso/TbookSsoServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-sso-service/src/main/java/com/lzg/sso/TbookSsoServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-sso-service/src/main/java/com/lzg/sso/controller/WeChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-sso-service/src/main/java/com/lzg/sso/controller/WeChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-sso-service/src/main/java/com/lzg/sso/service/impl/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-sso-service/src/main/java/com/lzg/sso/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-sso-service/src/main/java/com/lzg/sso/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbook-sso-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tbook-sso-service/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="6b03d20b-0e69-44e2-95f5-efce1c716707" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/tbook-common/target/" />
     <ignored path="$PROJECT_DIR$/tbook-order-interface/target/" />
     <ignored path="$PROJECT_DIR$/tbook-order-service/target/" />
@@ -729,7 +602,7 @@
       <workItem from="1538452551387" duration="11260000" />
       <workItem from="1538473268560" duration="113118000" />
       <workItem from="1538908251070" duration="9486000" />
-      <workItem from="1538964284723" duration="25676000" />
+      <workItem from="1538964284723" duration="26274000" />
     </task>
     <servers />
   </component>
@@ -766,7 +639,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="481712000" />
+    <option name="totallyTimeSpent" value="482310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,7 +651,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="1912" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />

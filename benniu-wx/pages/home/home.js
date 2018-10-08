@@ -15,9 +15,10 @@ Page({
     var that = this;
 
     /*获取单品信息*/
-    home.getHotData((data) => {
+    home.getProductorData((data) => {
+      console.log("data==" + data);
       that.setData({
-        hotArr: data
+        productsArr: data
       });
       callback && callback();
     });

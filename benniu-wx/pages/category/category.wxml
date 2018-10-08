@@ -1,38 +1,21 @@
-<import src="../tpls/category/category-tpl.wxml"/>
+<import src="../tpls/category/category-tpl.wxml" />
 <view class="container category-container">
   <view class="category-box">
-      <view class="left-box">
-        <block wx:for="{{categoryTypeArr}}">
-          <view class="menu-item {{currentMenuIndex==index?'selected':''}}" data-id="{{item.id}}" data-index="{{index}}" bindtap="changeCategory" data-title-name="{{item.name}}">
-            {{item.name}}
-          </view>
-        </block>
+    <view class="left-box">
+      <block wx:for="{{categoryTypeArr}}">
+        <view class="menu-item {{currentMenuIndex==index?'selected':''}}" data-id="{{item.categoryId}}" data-index="{{index}}" bindtap="changeCategory" data-title-name="{{item.categoryName}}">
+          {{item.categoryName}}
+        </view>
+      </block>
     </view>
-    <view class="right-box {{transClassArr[currentMenuIndex]}}">
 
-      <view class="foods-type-box">
-        <template is="categorydetail" data="{{categoryInfo:categoryInfo0}}"/>
-      </view>
-      <view class="foods-type-box">
-        <template is="categorydetail" data="{{categoryInfo:categoryInfo1}}"/>
-      </view>
-      <view class="foods-type-box">
-        <template is="categorydetail" data="{{categoryInfo:categoryInfo2}}"/>
-      </view>
-      <view class="foods-type-box">
-        <template is="categorydetail" data="{{categoryInfo:categoryInfo3}}"/>
-      </view>
-      <view class="foods-type-box">
-        <template is="categorydetail" data="{{categoryInfo:categoryInfo4}}"/>
-      </view>
-      <view class="foods-type-box">
-        <template is="categorydetail" data="{{categoryInfo:categoryInfo5}}"/>
-      </view>
-
-    </view>
+    <scroll-view class="foods-type-box" scroll-y="true" bindscrolltolower="lower" lower-threshold="10" data-id="{{category_id}}">
+      <template is="categorydisplay" data="{{contentlist:contentlist}}" />
+    </scroll-view>
 
   </view>
-  <loading hidden="{{loadingHidden}}">
-    加载中...
-  </loading>
+
 </view>
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>

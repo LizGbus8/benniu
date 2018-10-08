@@ -1,63 +1,49 @@
-
 <view class="container my-container" hidden="{{!loadingHidden}}">
-  <view class="my-header">
-    <image src="{{userInfo.avatarUrl}}"></image>
-    <text class="name">{{userInfo.nickName}}</text>
-  </view>
-  <!--地址管理-->
-  <view class="my-address">
-    <block wx:if="{{addressInfo}}">
-      <view class="item-title" ontap="editAddress">
-        地址管理
-        <image src="../../imgs/icon/arrow@right.png"></image>
-      </view>
-      <view  class="item-main">
-          <view class="section">
-            <input disabled name="name" placeholder="姓名" value="{{addressInfo.name}}" />
-          </view>
-          <view class="section">
-            <input disabled type="number" name="mobile" placeholder="手机号码" value="{{addressInfo.mobile}}"/>
-          </view>
-          <view class="section">
-            <input disabled name="detail" placeholder="收货地址" value="{{addressInfo.totalDetail}}"/>
-          </view>
-      </view>
-    </block>
-    <block wx:else>
-      <view class="add-new-address" ontap="editAddress"><text class="icon">+</text><text>添加地址</text></view>
-    </block>
-  </view>
-
-  <view class="my-order">
-    <view class="item-title">我的订单</view>
-    <view class="item-main">
-      <block wx:for="{{orderArr}}">
-        <view class="order-item">
-          <view class="order-header" ontap="showOrderDetailInfo" data-id="{{item.id}}">
-            <text>订单编号:</text>
-            <text class="order-no-txt">{{item.order_no}}</text>
-          </view>
-          <view class="order-main" ontap="showOrderDetailInfo" data-id="{{item.id}}">
-            <view class="item-left">
-              <image src="{{item.snap_img}}"></image>
-            </view>
-            <view class="item-middle">
-              <view>{{item.snap_name}}</view>
-              <view>{{item.total_count}}件商品</view>
-            </view>
-            <view class="item-right">
-              <text class="order-status-txt unpay" wx:if="{{item.status==1}}">待付款</text>
-              <text class="order-status-txt payed" wx:if="{{item.status==2}}">已付款</text>
-              <text class="order-status-txt done" wx:if="{{item.status==3}}">已发货</text>
-            </view>
-          </view>
-          <view class="order-bottom" wx:if="{{item.status==1}}">
-            <text>实付:￥{{item.total_price}}</text>
-            <view class="pay" ontap="rePay" data-id="{{item.id}}" data-index="{{index}}">付款</view>
-          </view>
-        </view>
-      </block>
+  <view class="container">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="../../imgs/icon/user@default.png" background-size="cover"></image>
+      <text class="userinfo-nickname">刚刚</text>
     </view>
+    <!-- kind list -->
+    <view>
+        <view class="kind-list">
+            <block wx:for="{{list}}" wx:key="id">
+                <view class="kind-list__item">
+                    <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
+                    <image class="kind-list__img" src="{{item.img}}"></image>
+                        <view class="weui-flex__item"><text class="item-text">{{item.name}}</text></view>
+                    </view>
+                    <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
+                        <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
+                            <!-- 个人信息 -->
+                            <view class="my" wx:if="{{item.id == 'myinfo'}}">
+                                <view class="myinfo_display">昵称：{{userinfo.nickname}}</view>
+                                <view class="myinfo_display">性别：{{userinfo.sex}}</view>
+                                <view class="myinfo_display">学校：{{userinfo.schoolcode}}</view>
+                                <view class="myinfo_display">兴趣：{{userinfo.interest}}</view>
+                                <view class="myinfo_display">联系方式：{{userinfo.contact}}</view>
+                            </view>
+                            <!-- 留言 -->
+
+                            <!-- 我的评价 -->
+                            <view class="weui-media-box weui-media-box_text" wx:if="{{item.id == 'comment'}}">
+                              <block wx:for="{{comments}}">  
+                                  <view class="weui-media-box__title weui-media-box__title_in-text">{{item.productTitle}}</view>
+                                  <view class="content_text">{{item.content}}</view>
+                                  <view class="weui-media-box__info">
+                                      <view class="weui-media-box__info__meta">来自：{{item.fromNickname}}</view>
+                                      <view class="weui-media-box__info__meta">{{item.createTime}}</view>
+                                      <view class="weui-media-box__info__meta weui-media-box__info__meta_extra" style='color:#fbcb33'>{{item.type}}</view>
+                                  </view>
+                              </block>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+    <!-- kindlist -->
   </view>
 </view>
 <loading hidden="{{loadingHidden}}">

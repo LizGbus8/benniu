@@ -31,6 +31,13 @@
     margin: 0 20rpx;
     background-color:#979797;
 }
+.stock {
+  font-size: 24rpx;
+}
+
+.stock.no {
+  color: #b42f2d;
+}
 .category-main{
     display: flex;
     flex-wrap: wrap;
@@ -52,4 +59,7 @@
     color:#444452;
     font-size: 24rpx;
 
+}
+.weui-form-preview{
+    margin-bottom: 25px;
 }

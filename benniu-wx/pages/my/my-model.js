@@ -9,31 +9,30 @@ class My extends Base{
     }
 
     //得到用户信息
-    getUserInfo(cb){
+  getUserInfo(callback){
         var that=this;
-        wx.login({
-            success: function () {
-                wx.getUserInfo({
-                    success: function (res) {
-                        typeof cb == "function" && cb(res.userInfo);
-
-                        //将用户昵称 提交到服务器
-                        if(!that.onPay) {
-                            that._updateUserInfo(res.userInfo);
-                        }
-
-                    },
-                    fail:function(res){
-                        typeof cb == "function" && cb({
-                            avatarUrl:'../../imgs/icon/user@default.png',
-                            nickName:'零食小贩'
-                        });
-                    }
-                });
-            },
-
-        })
+      var param = {
+        url: 'http://127.0.0.1:8082/token/userinfo',
+        setUpUrl: false,
+        sCallback: function (res) {
+          callback && callback(res.data);
+        }
+      };
+      this.request(param);
     }
+
+  getComments(userId,callback) {
+      var that = this;
+      var param = {
+        url: 'http://127.0.0.1:8090/comments/'+userId,
+        setUpUrl: false,
+        sCallback: function (res) {
+          callback && callback(res.data);
+        }
+      };
+      this.request(param);
+    }
+
 
     /*更新用户信息到服务器*/
     _updateUserInfo(res){
