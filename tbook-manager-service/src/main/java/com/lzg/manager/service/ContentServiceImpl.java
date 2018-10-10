@@ -8,10 +8,15 @@ import com.lzg.common.redis.RedisLock;
 import com.lzg.common.redis.RedisUtil;
 import com.lzg.common.utlis.KeyUtil;
 import com.lzg.manager.dao.ContentDao;
+import com.lzg.manager.dto.Message;
 import com.lzg.manager.entity.Content;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -34,6 +39,9 @@ public class ContentServiceImpl implements ContentService {
 
     @Autowired
     private RedisLock redisLock;
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
     private static final String CONTENT = "content";
 
@@ -85,27 +93,41 @@ public class ContentServiceImpl implements ContentService {
         /** 内容入库 */
         contentDao.save(content);
 
-        //TODO 更新索引库
+        /** 更新索引库 */
+        try {
+            Message message = new Message();
+            message.setData(content.getContentId());
+            rabbitTemplate.convertAndSend("search","search.update",message);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
 
         return content;
     }
 
     @Override
-    public Content updateContent(Content c) {
+    public Content updateContent(Content content) {
 
         /** 内容入库 */
-        contentDao.save(c);
+        contentDao.save(content);
 
         /** 同步缓存 */
         try {
-            redisUtil.hdel(CONTENT,c.getContentId());
+            redisUtil.hdel(CONTENT,content.getContentId());
         }catch (Exception e){
             e.printStackTrace();
         }
 
-        //TODO 更新索引库
-
-        return c;
+        /** 更新索引库 */
+        try {
+            Message message = new Message();
+            message.setData(content.getContentId());
+            rabbitTemplate.convertAndSend("search","search.update",message);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return content;
     }
 
     @Override

@@ -1,3 +1,4 @@
+<!-- 分类展示 -->
 <template name="categorydisplay">
   <view class="products-box" hidden="{{!contentlist}}">
     <view class="category-main">
@@ -132,6 +133,7 @@
   </view>
 </template>
 
+<!-- 我的发布 -->
 <template name="mypublishdisplay">
   <view class="products-box" hidden="{{!contentlist}}">
     <view class="category-main">
@@ -151,6 +153,35 @@
                 <view class="stock no" wx:else>下架 ￥{{item.productPrice}}</view>
               </view>
               <view style=font-size: 12px;color: #888888; ">发布时间：{{item.createTime}}</view>
+          </view>
+        </view>
+        </view>
+        <!-- </view> -->
+      </block>
+    </view>
+  </view>
+</template>
+
+<!-- 搜索结果展示 -->
+<template name="mysearchdisplay">
+  <view class="products-box" hidden="{{!searchlist}}">
+    <view class="category-main">
+      <block wx:for="{{searchlist}}">
+        <!-- <view class="weui-cells weui-cells_after-title"> -->
+        <view class="products-item" bindtap="onSearchItemTap" data-id="{{item.contentId}}">
+          <view class="weui-cell">
+            <!-- 商品图片 -->
+            <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+              <image src="../../imgs/product/banner-1a.png" style="width: 150px; height: 100px; display: block" />
+            </view>
+            <!-- 商品信息 -->
+            <view class="weui-cell__bd">
+              <view>{{item.productTitle}}</view>
+              <view style="font-size: 13px;color: #888000;">
+                <view >华南农业大学 ￥{{item.productPrice}}</view>
+              </view>
+              
+              <view style=font-size: 12px;color: #888888; ">{{item.productDesc}}</view>
           </view>
         </view>
         </view>

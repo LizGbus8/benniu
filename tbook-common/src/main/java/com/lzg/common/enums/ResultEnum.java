@@ -26,7 +26,9 @@ public enum ResultEnum {
     NOT_HAS_LOGIN(14,"未登录"),
     NOT_HAS_Register(15,"未注册"),
     TOKEN_ERROT(16,"token error"),
-    IMAGE_ERROT(16,"图片不存在")
+    IMAGE_ERROT(17,"图片不存在"),
+    PARAM_ERROT(18,"参数错误"),
+    INDEX_IMPORT_ERROT(18,"索引导入错误")
     ;
     private Integer code;
 

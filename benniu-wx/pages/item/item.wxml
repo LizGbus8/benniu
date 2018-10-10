@@ -5,6 +5,7 @@
       <template is="mybuydisplay" data="{{buyorderlist:buyorderlist}}"/>
       <template is="mysalldisplay" data="{{sallorderlist:sallorderlist}}"/>
       <template is="mypublishdisplay" data="{{contentlist:contentlist}}" />
+      <template is="mysearchdisplay" data="{{searchlist:searchlist}}" />
   </view>
 
 </view>

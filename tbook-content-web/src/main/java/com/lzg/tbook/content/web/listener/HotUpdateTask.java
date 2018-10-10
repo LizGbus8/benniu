@@ -39,7 +39,7 @@ public class HotUpdateTask extends TimerTask {
         log.info("HotUpdateTask 执行了一次");
 
         //更新hot队列
-        /* 获取所有的队列 */
+        /* 获取所有的队列（分类） */
         List<Category> categoryList = categoryService.findAll();
 
         /* 获取每个热门队列前100的content */
@@ -49,6 +49,9 @@ public class HotUpdateTask extends TimerTask {
             String sname = category.getCategorySname();
             //获取每个队列前100的数据,json格式
             Set<Object> set = redisUtil.zRank(sname, 0L, 100L);
+
+            /** 删除原队列（分类） */
+            redisUtil.del(sname);
 
             //更新队列中的元素
             for (Object json : set) {

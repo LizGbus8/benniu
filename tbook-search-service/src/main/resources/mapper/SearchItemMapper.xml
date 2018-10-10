@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lzg.tbook.search.mapper.SearchItemMapper">
+
+    <!-- List<SearchItem> getItemList(); -->
     <select id="getItemList" resultType="com.lzg.tbook.search.entity.SearchItem">
     SELECT
 	content_id,
@@ -15,6 +17,24 @@
     category cy
     ON ct.category_id=cy.category_id
     WHERE content_status=0;
+
+    </select>
+
+    <!-- SearchItem getItemById(); -->
+    <select id="getItemById" resultType="com.lzg.tbook.search.entity.SearchItem">
+    SELECT
+	content_id,
+	product_title,
+	product_desc,
+	product_price,
+	product_img1,
+	category_name
+    FROM
+    content ct
+    LEFT JOIN
+    category cy
+    ON ct.category_id=cy.category_id
+    WHERE content_status=0 and content_id = #{contentId} ;
 
     </select>
 </mapper>

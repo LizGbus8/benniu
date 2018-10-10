@@ -4,7 +4,16 @@ import {
 var home = new Home(); //实例化 首页 对象
 Page({
   data: {
-    loadingHidden: true
+    loadingHidden: false,
+    page: 0, //当前页码
+    size: 10, //页数据大小
+    hasMoreData: true, //是否有更多数据
+    contentlist: [],
+    sallorderlist: [],
+    buyorderlist: [],
+    userId: '',
+    orderlist: [],
+    code: null
   },
   onLoad: function() {
     this._loadData();
@@ -18,7 +27,8 @@ Page({
     home.getProductorData((data) => {
       console.log("data==" + data);
       that.setData({
-        productsArr: data
+        productsArr: data,
+        loadingHidden: true
       });
       callback && callback();
     });
@@ -48,6 +58,14 @@ Page({
   },
 
   //search
+  search:function(){
+    var that = this;
+    var keyword = that.data.inputVal;
+    //跳转到search
+    wx.navigateTo({
+      url: '../item/item?keyword=' + keyword + '&code=5'
+    })
+  },
   showInput: function() {
     this.setData({
       inputShowed: true

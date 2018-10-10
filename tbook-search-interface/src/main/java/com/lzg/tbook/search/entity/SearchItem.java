@@ -21,7 +21,7 @@ public class SearchItem implements Serializable {
     private String productDesc;
 
     /** 商品价格 */
-    private BigDecimal productPrice;
+    private Long productPrice;
 
     /** 商品图片*/
     private String productImg1;

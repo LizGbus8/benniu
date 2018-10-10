@@ -10,21 +10,32 @@ Page({
     size: 10, //页数据大小
     hasMoreData: true, //是否有更多数据
     contentlist: [],
+    searchlist: [],
     sallorderlist: [],
     buyorderlist: [],
     userId: '',
     orderlist:[],
-    code:null
+    code:null,
+    keyword:null
   },
-  //code 1 我的发布 2 我卖出的 3 我买入的 4 我喜欢的
+  //code 1 我的发布 2 我卖出的 3 我买入的 4 我喜欢的 5 搜索
   onLoad: function(option) {
-    var userId = option.userId;
-    this.setData({
-      userId: userId,
-      code: option.code
-    });
-    this.data.userId = userId;
     var exp = option.code;
+    //如果是搜索页面过来的
+    var keyword = option.keyword;
+    if (exp == 5){
+      this.setData({
+        keyword: keyword,
+        code: option.code
+      });
+    }else{
+      //其他页面过来的
+      var userId = option.userId;
+      this.setData({
+        userId: userId,
+        code: option.code
+      });
+    }
     console.log("exp:" + exp);
     switch (exp) {
       case '1':
@@ -39,9 +50,26 @@ Page({
       case '4':
         this._loadPublishData(); console.log("_loadPublishData");
         break;
+      case '5':
+        this._loadSearchData(); console.log("_loadSearchData");
+        break;
       default:
         console.log("default");
     }
+  },
+
+  /* 加载搜索的数据 */
+  _loadSearchData:function(callback){
+    var that = this;
+    var keyword = that.data.keyword;
+    console.log("keyword :"+keyword)
+    that.getProductsByKeyword(keyword,(data)=>{
+      console.log(data);
+      that.setData({
+        loadingHidden: true,
+        searchlist: data
+      });
+    });
   },
 
   /*加载我的买入数据*/
@@ -49,7 +77,7 @@ Page({
     var that = this;
     var userId = that.data.userId;
     that.getOrdersByUserIdAndType(userId,0,(data)=>{
-      console.log("data:" + data)
+      console.log("data:" + data);
       that.setData({
         orderlist:data,
         buyorderlist:data,
@@ -121,7 +149,7 @@ Page({
     });
   },
 
-  /* 请求商品 */
+  /* 通过userId,请求商品 */
   getProductsByUserId: function (userId, callback) {
     var that = this;
     var p = that.data.page;
@@ -153,12 +181,54 @@ Page({
     });
   },
 
-  /*跳转到商品详情*/
+  /* 通过搜索关键词,请求商品 */
+  getProductsByKeyword: function (keyword, callback) {
+    console.log("getProductsByKeyword");
+    var that = this;
+    var p = that.data.page;
+    item.getSearchData(keyword, p, (res) => {
+      var searchlistTem = that.data.searchlist;
+      if (res.code == 0) {
+        if (that.data.page == 0) {
+          searchlistTem = []
+        }
+        var resultlist = res.data;
+        if (resultlist.length < that.data.size) {
+          searchlistTem = searchlistTem.concat(resultlist),
+            that.setData({
+              hasMoreData: false
+            })
+        } else {
+          searchlistTem = searchlistTem.concat(resultlist),
+            that.setData({
+              hasMoreData: true,
+              page: that.data.page + 1
+            })
+        }
+      } else {
+        wx.showToast({
+          title: res.showapi_res_error,
+        })
+      }
+      callback && callback(searchlistTem);
+    });
+  },
+
+  /*跳转到商品详情----我的发布*/
   onProductsItemTap: function(event) {
     var id = item.getDataSet(event, 'id');
     console.log(id)
     wx.navigateTo({
       url: '../product/product?id=' + id +'&code=1'
+    })
+  },
+
+  /*跳转到商品详情----搜索*/
+  onSearchItemTap: function (event) {
+    var id = item.getDataSet(event, 'id');
+    console.log(id)
+    wx.navigateTo({
+      url: '../product/product?id=' + id + '&code=0'
     })
   },
 

@@ -44,6 +44,24 @@ class Item extends Base {
     };
     this.request(param);
   }
+
+  /* 获取搜索的商品列表 */
+  getSearchData(keyword, page, callback) {
+    var param = {
+      url: 'http://127.0.0.1:8085/search',
+      setUpUrl: false,
+      data: {
+        q: keyword,
+        page: page,
+        size: 10
+      },
+      sCallback: function (res) {
+        console.log("res return data is " + res)
+        callback && callback(res);
+      }
+    };
+    this.request(param);
+  }
 }
 
 export {

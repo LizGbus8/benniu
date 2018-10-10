@@ -8,6 +8,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
  * 作者：LizG on 2018/9/27 10:35
  * 描述：
  */
+//暂时没用
 public class ApplicationStartup implements ApplicationListener<ContextRefreshedEvent> {
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {

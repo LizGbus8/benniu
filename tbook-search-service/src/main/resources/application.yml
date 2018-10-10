@@ -9,9 +9,11 @@ spring:
       address: zookeeper://120.79.254.32:2181
     protocol:
       name: dubbo
-      port: 20882
+      port: 20887
     scan: com.lzg.tbook.order.service
-
+  data:
+    solr:
+      host: http://120.79.254.32:8080/solr/collection1
   datasource:
       username: root
       password: root
@@ -34,6 +36,12 @@ spring:
       maxPoolPreparedStatementPerConnectionSize: 20
       useGlobalDataSourceStat: true
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+#  rabbitMQ服务器地址
+  rabbitmq:
+      host: 120.79.254.32
+      username: guest
+      password: guest
 
 
 mybatis:
