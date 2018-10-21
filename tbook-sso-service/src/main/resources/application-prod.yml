@@ -1,0 +1,51 @@
+server:
+  port: 8082
+
+spring:
+  aop:
+    proxy-target-class: true
+  dubbo:
+    application:
+      name: ssoService
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20882
+    scan: com.lzg.sso.service,com.lzg.sso.controller
+#配置druid配置源
+  jpa:
+    show-sql: true
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/benniu?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    filters:
+       commons-log.connection-logger-name: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+# Redis服务器地址
+#spring.redis.host=10.100.50.23
+# Redis服务器连接端口
+#spring.redis.port=6379
+# Redis服务器连接密码（默认为空）
+  redis:
+    password:
+# redis.cluster
+    cluster:
+      nodes: 127.0.0.1:7001,127.0.0.1:7002,127.0.0.1:7003,127.0.0.1:7004,127.0.0.1:7005,127.0.0.1:7006

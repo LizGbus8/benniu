@@ -1,11 +1,13 @@
 package com.lzg.tbook.content.web.controller;
 
 import com.lzg.common.VO.ResultVO;
+import com.lzg.common.utlis.FastDFSClient;
 import com.lzg.common.utlis.ResultVOUtil;
 import com.lzg.tbook.content.web.dto.ContentDTO;
 import com.lzg.tbook.content.web.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,12 +22,19 @@ public class ProductController {
 
     @Autowired
     private ProductService productService;
+    @Autowired
+    private FastDFSClient dfsClient;
 
     @RequestMapping("/product/{id}")
     public ResultVO getDetailInfo(@PathVariable("id") String id){
         ContentDTO content = productService.findContent(id);
         log.info("content is {}",content);
         return ResultVOUtil.success(content);
+    }
+
+    @GetMapping("/fastdfs")
+    public void connect(){
+        dfsClient.getConnect();
     }
 
 

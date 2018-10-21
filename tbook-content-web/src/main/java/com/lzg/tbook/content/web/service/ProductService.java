@@ -112,12 +112,13 @@ public class ProductService {
             redisUtil.hset(READ, contentId, 1 + read);
 
         }
-        content.setContent_read(content.getContent_read()+1+read);
-        //TODO 计算hot,add2hot
-        log.info("hot content :{}",content);
-        updateHot(content);
+        /** 这里没必要 */
+        //content.setContent_read(content.getContent_read()+1+read);
+        //log.info("hot content :{}",content);
+        //updateHot(content);
     }
 
+    /* 没必要 */
     public void updateHot(Content content){
         /* 计算hot */
         long grown = System.currentTimeMillis() - content.getCreateTime().getTime();

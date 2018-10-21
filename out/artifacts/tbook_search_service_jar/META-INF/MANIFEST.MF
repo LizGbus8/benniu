@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring Boot Data JPA Starter
+Implementation-Version: 1.5.14.RELEASE
+Archiver-Version: Plexus Archiver
+Built-By: bamboo
+Specification-Vendor: Pivotal Software, Inc.
+Specification-Title: Spring Boot Data JPA Starter
+Implementation-Vendor-Id: org.springframework.boot
+Implementation-Vendor: Pivotal Software, Inc.
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_144
+Specification-Version: 1.5.14.RELEASE
+Implementation-URL: http://projects.spring.io/spring-boot/
+

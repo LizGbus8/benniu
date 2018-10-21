@@ -3,7 +3,6 @@ package com.lzg.common.utlis;
 import lombok.extern.slf4j.Slf4j;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -20,18 +19,18 @@ public class FastDFSClient {
     private StorageServer storageServer = null;
     private StorageClient1 storageClient = null;
 
-    private static String CONFIG = null;
-
-    static {
-        try {
-            CONFIG = new ClassPathResource("fdfs_client.conf").getFile().getAbsolutePath();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    private static String CONFIG1 = null;
+//    private static String CONFIG2 = null;
+//    static {
+//        try {
+//          CONFIG1 = new ClassPathResource("fdfs_client.conf").getFile().getAbsolutePath();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     public FastDFSClient() throws Exception {
-        ClientGlobal.init(CONFIG);
+        ClientGlobal.initByTrackers("120.79.254.32:22122");
         trackerClient = new TrackerClient();
         trackerServer = trackerClient.getConnection();
         storageServer = null;
@@ -44,6 +43,10 @@ public class FastDFSClient {
         System.out.println(s);
         FileInfo first = fastDFSClient.getFile("first", "M00/00/00/rBKBJ1uwtYOAMhU8AABQcwPiCdA183.jpg");
         System.out.println(first);
+    }
+
+    public void getConnect(){
+        getFile("first","M00/00/00/rBKBJ1uwtYOAMhU8AABQcwPiCdA183.jpg");
     }
 
     /**

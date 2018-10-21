@@ -4,7 +4,8 @@
     <file url="file://$PROJECT_DIR$/tbook-content-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tbook-manager-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tbook-order-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/tbook-order-service/src/main/resources/application.yml" charset="CESU-8" />
+    <file url="file://$PROJECT_DIR$/tbook-order-service/src/main/resources/application-dev.yml" charset="CESU-8" />
+    <file url="file://$PROJECT_DIR$/tbook-order-service/src/main/resources/application-prod.yml" charset="CESU-8" />
     <file url="file://$PROJECT_DIR$/tbook-search-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tbook-sso-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tbook-sso-service" charset="UTF-8" />

@@ -63,7 +63,7 @@ public class HotUpdateTask extends TimerTask {
                 /* 计算hot */
                 long grown = System.currentTimeMillis() - findContent.getCreateTime().getTime();
 
-                int readAndStar = findContent.getContent_read() + findContent.getContentStar();
+                int readAndStar = findContent.getContent_read() + findContent.getContentStar()*9;
 
                 Double hot = (double)readAndStar/(double)grown;
 
